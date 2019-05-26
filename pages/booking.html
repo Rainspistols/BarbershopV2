@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a href="" class="page-header__logo">
+      <img src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский"
+        class="page-header__logo-image">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" aria-label="открыть меню"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Наши работы</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Записаться</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Контакты</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a href="login.html" class="user-list__login"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="booking-main">
+    <article class="booking-form">
+      <h1 class="booking-form__title">Запись на стрижку</h1>
+      <a href="index.html" class="booking-form__button button">На главную</a>
+      <form class="booking-form__list" method="POST" action="https://echo.htmlacademy.ru/">
+        <div class="booking-form__names-wrap">
+          <input class="booking-form__item" type="text" placeholder="Фамилия" name="surname">
+          <input class="booking-form__item" type="text" placeholder="Имя" name="name">
+          <input class="booking-form__item" type="text" placeholder="Отчество" name="father-name">
+        </div>
+        <div class="booking-form__contacts-wrap">
+          <input class="booking-form__item" type="tel" placeholder="Контактный телефон" name="tel">
+          <input class="booking-form__item" type="email" placeholder="Контактный e-mail" name="email">
+        </div>
+        <input class="booking-form__item" type="text" placeholder="Доп. информация для мастера"
+          name="additional information">
+
+        <div class="beard-choose">
+          <h2 class="beard-choose__title">Выберите модель бороды:</h2>
+          <ul class="beard-choose__list">
+            <li class="beard-choose__item">
+              <label class="beard-choose__label">
+                <input class="beard-chooose__radio" type="radio" name="beard-choose" value="адмирал">
+                <p class="beard-choose__beard-title">адмирал</p>
+                <span class="bead-choose__checkmark"></span>
+                <img src="#" alt="борода адмирала" class="bear-choose__beard-image" width="52" height="49">
+              </label>
+            </li>
+            <li class="beard-choose__item">
+              <label class="beard-choose__label">
+                <input class="beard-chooose__radio" type="radio" name="beard-choose" value="лесоруб">
+                <p class="beard-choose__beard-title">лесоруб</p>
+                <span class="bead-choose__checkmark"></span>
+                <img src="#" alt="борода лесоруба" class="bear-choose__beard-image" width="58" height="68">
+              </label>
+            </li>
+            <li class="beard-choose__item">
+              <label class="beard-choose__label">
+                <input class="beard-chooose__radio" type="radio" name="beard-choose" value="полярник">
+                <p class="beard-choose__beard-title">полярник</p>
+                <span class="bead-choose__checkmark"></span>
+                <img src="#" alt="борода полярника" class="bear-choose__beard-image" width="63" height="78">
+              </label>
+            </li>
+            <li class="beard-choose__item">
+              <label class="beard-choose__label">
+                <input class="beard-chooose__radio" type="radio" name="beard-choose" value="боярин">
+                <p class="beard-choose__beard-title">боярин</p>
+                <span class="bead-choose__checkmark"></span>
+                <img src="#" alt="борода боярина" class="bear-choose__beard-image" width="57" height="97">
+              </label>
+            </li>
+            <li class="beard-choose__item">
+              <label class="beard-choose__label">
+                <input class="beard-chooose__radio" type="radio" name="beard-choose" value="мудрец">
+                <p class="beard-choose__beard-title">мудрец</p>
+                <span class="bead-choose__checkmark"></span>
+                <img src="#" alt="борода мудреца" class="bear-choose__beard-image" width="45" height="104">
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="additional-service">
+          <ul class="additional-service__list">
+            <li class="adition-service__item adition-service__item1">
+              <label class="addition-service__label adition-service__label16">
+                <input type="checkbox" class="addition-service__checkbox" name="paint" value="Подкрасить бороду">
+                <p class="addition-service__title">Подкрасить бороду</p>
+                <span class="adition-service__checkmark"></span>
+              </label>
+            </li>
+            <li class="adition-service__item adition-service__item2">
+              <label class="addition-service__label adition-service__label26">
+                <input type="checkbox" class="addition-service__checkbox" name="twirl" value="Накрутить усы">
+                <p class="addition-service__title">Накрутить усы</p>
+                <span class="adition-service__checkmark"></span>
+              </label>
+            </li>
+            <li class="adition-service__item adition-service__item3">
+              <label class="addition-service__label adition-service__label36">
+                <input type="checkbox" class="addition-service__checkbox" name="brush" value="Причесать бороду">
+                <p class="addition-service__title">Причесать бороду</p>
+                <span class="adition-service__checkmark"></span>
+              </label>
+            </li>
+            <li class="adition-service__item adition-service__item4">
+              <label class="addition-service__label adition-service__label46">
+                <input type="checkbox" class="addition-service__checkbox" name="trim" value="Подровнять виски">
+                <p class="addition-service__title">Подровнять виски</p>
+                <span class="adition-service__checkmark"></span>
+              </label>
+            </li>
+            <li class="adition-service__item adition-service__item5">
+              <label class="addition-service__label adition-service__label56">
+                <input type="checkbox" class="addition-service__checkbox" name="delete" value="Убрать седину">
+                <p class="addition-service__title">Убрать седину</p>
+                <span class="adition-service__checkmark"></span>
+              </label>
+            </li>
+            <li class="adition-service__item adition-service__item6">
+              <label class="addition-service__label adition-service__label66">
+                <input type="checkbox" class="addition-service__checkbox" name="buff" value="Отполировать лысину">
+                <p class="addition-service__title">Отполировать лысину</p>
+                <span class="adition-service__checkmark"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <button type="submit" class="button">Отправить заявку</button>
+      </form>
+    </article>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Барбершоп Бородинский</b>
+        <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+          <a href="tel:+78125556666" class="contacts__phone">
+            Тел.:<span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
+          </a>
+        </p>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="https://vk.com" class="social__link social__link--vkontakte">Мы в Вконтакте</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="https://facebook.com" class="social__link social__link--facebook">Мы в Фейсбуке</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="https://instagram.com" class="social__link social__link--instagram">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyrgiht__text">Разработано:</b>
+        <a href="#" class="copyright__link button">Rainspistols</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
