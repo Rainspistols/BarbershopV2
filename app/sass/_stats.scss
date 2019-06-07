@@ -1,0 +1,81 @@
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  &__slogan {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: black;
+    margin:0;
+    padding: 25px 0 20px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+  }
+  &__intro {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: black;
+    margin:0;
+    padding: 0 0 30px 0;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+  }
+  &__table-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 20px;
+    height: 80px;
+    box-sizing: border-box;
+  }
+  &__table-row:nth-child(even) {
+    background-color: #404040;
+  }
+  &__table-row:nth-child(odd) {
+    background-color: #4e4e4e;
+  }
+  &__value {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 0;
+  }
+  &__field {
+    text-align: right;
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0;
+  }
+  &__legend {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    display: block;
+    background-color: #242424;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+  }
+  &__legend--top {
+    display: none;
+  }
+}

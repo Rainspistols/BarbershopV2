@@ -1,0 +1,3 @@
+    <svg width="7em" height="7em" viewBox="0 0 2 2" preserveAspectRatio="none"> width и/или height можно задать в процентах
+      <polygon fill="#242424" points="0,0 2,0 1,2"/>
+    </svg>

@@ -1,0 +1,47 @@
+.button {
+  background-color: transparent;
+  border: 1px solid #e5ddd5;
+  font-family: 'PT Sans Narrow', sans-serif, arial;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #d5c9bd;
+  }
+
+  &:active {
+    background-color: #d5c9bd;
+    color: rgba(169, 159, 149, 0.3);
+  }
+
+  &--black {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #3e3e3e;
+  }
+
+  &--black:hover,
+  &--black:focus {
+    border: 1px solid #515151;
+  }
+
+  &--black:active {
+    background-color: #515151;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--fat {
+    text-transform: uppercase;
+    padding: 12px 0;
+  }
+  &--826550 {
+    background-color: #826550;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}

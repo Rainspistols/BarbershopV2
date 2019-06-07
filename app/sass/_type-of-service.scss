@@ -1,0 +1,56 @@
+.type-of-service {
+  font-family: 'PT Sans Narrow', sans-serif, arial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__trimming,
+  &__shaving,
+  &__moustache {
+    position: relative;
+    margin:0;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    margin-left: 40px;
+  }
+  &__trimming::before,
+  &__shaving::before,
+  &__moustache::before {
+    content: "";
+    position: absolute;
+  }
+
+  &__trimming::before {
+    background-image: url(../../app/img/scissors-icon.svg);
+    width: 21px;
+    height: 20px;
+    left: -36px;
+    top: 4px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  &__shaving::before {
+    background-image: url(../../app/img/beard-icon.svg);
+    width: 23px;
+    height: 21px;
+    left: -36px;
+    top: 4px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  &__moustache {
+    margin-left: 60px;
+  }
+  &__moustache::before {
+    background-image: url(../../app/img/mustache-icon.svg);
+    width: 45px;
+    height: 12px;
+    left: -55px;
+    top: 6px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,149 @@
+@mixin font-18-30-regular {
+  font-family: 'PT Sans Narrow', sans-serif, arial;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.client-aria {
+  background-color: #f8f5f2;
+  padding: 30px 20px 27px 20px;
+  box-shadow: 0px 30px 50px 0px rgba(0,0,0,0.75);
+
+  &__title {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    text-align: center;
+    margin: 0 0 25px 0;
+  }
+
+  &__instruction {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    text-align: center;
+    margin: 0 0 25px 0;
+  }
+
+  &__login,
+  &__password {
+    @include font-18-30-regular;
+    padding: 10px 0 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e5ddd5;
+  }
+
+  &__login:active,
+  &__password:active {
+    border: 1px solid #999999;
+  }
+
+  &__login::placeholder,
+  &__password::placeholder {
+    color: black;
+  }
+
+  &__login {
+    margin-bottom: 6px;
+  }
+
+  &__password {
+    margin-bottom: 30px;
+  }
+
+  &__login-wrap,
+  &__password-wrap {
+    position: relative;
+  }
+
+  &__login-wrap::before,
+  &__password-wrap::before {
+    position: absolute;
+    content: "";
+  }
+
+  &__login-wrap::before {
+    background-image: url(../../app/img/Usercopy2.svg);
+    width: 14px;
+    height: 15px;
+    right: 19px;
+    top: 17px;
+  }
+
+  &__password-wrap::before {
+    background-image: url(../../app/img/Locked2.svg);
+    width: 15px;
+    height: 17px;
+    right: 19px;
+    top: 15px;
+  }
+
+  &__remember-me {
+    cursor: pointer;
+    @include font-18-30-regular;
+    padding-left: 45px;
+    margin-bottom: 35px;
+    display: inline-block;
+    position: relative;
+
+    .client-aria__default-checkbox {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .client-aria__checkmark {
+      width: 33px;
+      height: 33px;
+      background-color: #ffffff;
+      box-sizing: border-box;
+      border: 1px solid #e5ddd5;
+      position: absolute;
+      left: 0;
+      top: -2px;
+    }
+
+    .client-aria__checkmark::after {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 4px;
+      width: 8px;
+      height: 15px;
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+      display: none;
+    }
+
+  }
+
+  &__remember-me &__default-checkbox:checked ~ &__checkmark::after {
+    display: block;
+  }
+
+  &__forgot-password {
+    @include font-18-30-regular;
+    float:right;
+  }
+
+  &__buttons-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button-enter {
+    margin-right: 20px;
+    background-color: #826550;
+    color: #ffffff;
+  }
+}

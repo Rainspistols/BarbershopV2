@@ -1,0 +1,51 @@
+.social {
+  &__list {
+    display: flex;
+    flex-basis: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    width: 33.3%;
+    height: 101px;
+    display: flex;
+    position: relative;
+  }
+  &__link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #3f3f3f;
+  }
+  &__link::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+  }
+  &__link:active {
+    background-color: #252525;
+    border:none;
+  }
+  &__link--vkontakte::after {
+    background-image: url(../../app/img/vk-icon-big.png);
+    width: 23px;
+    height: 26px;
+    margin-left: -11.5px;
+    margin-top: -13px;
+  }
+  &__link--facebook::after {
+    background-image: url(../../app/img/facebook-icon-big.png);
+    width: 18px;
+    height: 39px;
+    margin-left: -9px;
+    margin-top: -24.5px;
+  }
+  &__link--instagram::after {
+    background-image: url(../../app/img/insta-icon-big.png);
+    width: 36px;
+    height: 36px;
+    margin-left: -18px;
+    margin-top: -18px;
+  }
+
+}

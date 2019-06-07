@@ -1,0 +1,75 @@
+.advantages {
+  margin-top: -1px;
+  position: relative;
+  &::after {
+    content: "";
+    background-image: url(../../app/img/triangle242424.svg);
+    position: absolute;
+    bottom: -35px;
+    width: 100%;
+    height: 35px;
+  }
+  &__wrap {
+    position: relative;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #242424;
+  }
+
+  &__item {
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 44px;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  &__img {
+    margin: 30px 0;
+    width: 100%;
+  }
+
+  &__title {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 8px;
+    color: #ffffff;
+  }
+
+  &__description {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 0 30px;
+    margin: 0;
+    color: #ffffff;
+  }
+
+  &__item--cool {
+    display: none;
+  }
+
+  &__item--expensive {
+    display: none;
+  }
+
+  &__toggles {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: calc(50% - 42px);
+    bottom: 10px;
+  }
+}

@@ -1,0 +1,14 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px 25px 20px;
+  &__text {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+}

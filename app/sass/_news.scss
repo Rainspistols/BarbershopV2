@@ -1,0 +1,64 @@
+.news {
+  padding: 70px 20px 0;
+  border-bottom: 1px solid #e5ddd5;
+  background-color: #f8f5f2;
+  &__title {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    padding: 20px 0;
+    display: none;
+  }
+  &__item--mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item--mobile:first-child {
+    border-bottom: 1px solid #e5ddd5;
+  }
+  &__date {
+    width: 50px;
+    height: 60px;
+    background-color: #000000;
+    padding: 5px 10px 0 10px;
+    box-sizing: border-box;
+    clip-path: polygon(0 85%, 0 0, 100% 0, 100% 85%, 50% 100%);
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+    color: #ffffff;
+    text-align: center;
+  }
+  &__day {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  &__text {
+    min-width: 210px;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: -10px;
+  }
+  &__button {
+    margin-bottom: 26px;
+  }
+}

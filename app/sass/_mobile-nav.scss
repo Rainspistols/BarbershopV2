@@ -1,0 +1,100 @@
+@mixin font-settings {
+  font-family: 'PT Sans Narrow', sans-serif, arial;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.mobile-nav--closed {
+  position: relative;
+  &__title {
+    @include font-settings;
+    text-align: center;
+    padding: 13px 0 13px 0;
+    background-color: #826550;
+  }
+  &__toggle {
+    width: 70px;
+    background-color: #6a4d38;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    height: 100%;
+  }
+  &__toggle::after {
+    content: "";
+    background-image: url(../../app/img/menu-icon.svg);
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 19px;
+    display: block;
+    margin: auto;
+  }
+  &__toggle:active ~ &__toggle::after {
+    opacity: 0.3;
+  }
+}
+
+.mobile-nav--open {
+  position: relative;
+  width: calc(100% - 70px);
+  margin-top: -50px;
+  margin-left: 70px;
+  display: none;
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #826550;
+    box-shadow: inset 49px 3px 5px -44px rgba(0, 0, 0, 0.3);
+  }
+  &__item {
+    border-bottom: 1px solid #71543f;
+    border-top: 1px solid #886e5b;
+  }
+  &__link:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &__link {
+    @include font-settings;
+    text-decoration: none;
+    display: block;
+    padding: 13px 0 13px 20px;
+  }
+  &__user-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #6a4d38;
+    box-shadow: inset 49px 3px 5px -44px rgba(0, 0, 0, 0.3);
+  }
+  &__user-button {
+    border: 0;
+    padding: 13px 0 13px 50px;
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    background-color: transparent;
+  }
+  &__user-button::after {
+    content: "";
+    background-image: url(/app/img/mobile-nav--open__user-button.svg);
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 20px;
+    top: 18px;
+    filter: invert(50%) sepia(3%) saturate(2068%) hue-rotate(343deg) brightness(104%) contrast(96%);
+  }
+}

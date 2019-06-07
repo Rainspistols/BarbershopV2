@@ -1,0 +1,59 @@
+.our-portfolio {
+  padding: 34px 20px 40px 20px;
+  background-color: #f8f5f2;
+
+  &__title {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 34px;
+  }
+
+  &__button {
+    display: none;
+  }
+
+  &__best-work {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    margin: auto;
+    display: block;
+  }
+
+  &__sticker {
+    position: absolute;
+    top: 400px;
+  }
+
+  &__best-work-description {
+    border: 1px solid #e5ddd5;
+    padding: 20px 20px 0 20px;
+  }
+
+  &__customer-name {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  &__customer-comment {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    display: block;
+    font-style: normal;
+    margin-bottom: 20px;
+  }
+
+}
