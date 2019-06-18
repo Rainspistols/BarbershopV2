@@ -1,4 +1,5 @@
-.sticker {
+.sticker,
+.sticker--reverse {
   font-family: 'PT Sans Narrow', sans-serif, arial;
   font-weight: bold;
   font-size: 20px;
@@ -6,9 +7,16 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #826550;
-  display: inline-block;
-  vertical-align: top;
-  padding: 12px 25px;
+  padding: 12px 0;
   margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  width: 175px;
+
   clip-path: polygon(100% 0%, 95% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+
+.sticker--reverse {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
+
 }

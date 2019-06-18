@@ -8,6 +8,10 @@
   text-align: center;
   padding: 10px 0;
   width: 100%;
+  color: black;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -28,6 +32,7 @@
   &--black:hover,
   &--black:focus {
     border: 1px solid #515151;
+    outline: 0;
   }
 
   &--black:active {

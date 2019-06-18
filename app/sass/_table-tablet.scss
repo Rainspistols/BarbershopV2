@@ -1,0 +1,64 @@
+.table-tablet {
+  width: 100%;
+  border-collapse: collapse;
+  &__title {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  &__table-row {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    box-sizing: border-box;
+  }
+  &__table-row:first-child {
+    border-top: 1px solid #4a4a4a;
+  }
+
+  &__numbers,
+  &__term,
+  &__definition,
+  &__price {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+    padding: 0;
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__numbers {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+    width: 70px;
+    border-right: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+    border-left: 1px solid #4a4a4a;
+    justify-content: center;
+    padding: 0;
+  }
+  &__term {
+    width: 250px;
+    border-right: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+  }
+  &__price,
+  &__definition {
+    width: 160px;
+    border-right: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+  }
+}
+

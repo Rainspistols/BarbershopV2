@@ -1,40 +1,76 @@
 .price-list {
   background-color: #353535;
-  padding: 75px 20px 20px 20px;
-  margin-top: -42px;
+  padding: 70px 20px 20px 20px;
   position: relative;
   z-index: -1;
+
   &::after {
     content: "";
-    background-image: url(../../app/img/triangle353535.svg);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='35' viewBox='0 0 2 2' preserveAspectRatio='none'%3E%3Cpolygon fill='%23353535' points='0,0 2,0 1,2'/%3E%3C/svg%3E");
     position: absolute;
     bottom: -35px;
     width: 100%;
     height: 35px;
     left: 0;
   }
-  &__title {
-    font-family: 'PT Sans Narrow', sans-serif, arial;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 30px;
+
+  &__table-tablet {
+    display: none;
   }
-  &__table {
-    width: 100%;
+
+}
+
+@media (min-width:$tablet-width) {
+  .price-list {
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+
+    &__wrap {
+      width: 640px;
+      margin: auto;
+    }
+
+    &__table-tablet {
+      display: table;
+      margin-bottom: 10px;
+    }
+
+    &__table-mobile {
+      display: none;
+    }
   }
-  &__table-row {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__service {
-    font-family: 'PT Sans Narrow', sans-serif, arial;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    color: #ffffff;
-    margin-bottom: 20px;
+}
+
+@media (min-width:$desktop-width) {
+  .price-list {
+    padding-bottom: 80px;
+    &::after {
+      display: none;
+    }
+    &__wrap {
+      width: 960px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__table-tablet {
+      width: 630px;
+      display: block;
+      margin-bottom: 0px;
+      box-sizing: border-box;
+    }
+    &__discount {
+      max-width: 270px;
+      margin-top: 69.6px;
+      display: flex;
+      flex-direction: column;
+    }
+    .discount-time__hours {
+      font-weight: 400;
+    }
+    .discount-time__img {
+      margin: auto;
+      display: block;
+    }
   }
 }

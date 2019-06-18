@@ -60,3 +60,81 @@
     display: block;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .additional-service {
+    width: 640px;
+    padding: 0;
+    box-sizing: border-box;
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+      position: relative;
+      margin-bottom: 70px;
+    }
+    &__title::after,
+    &__title::before {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 1px;
+      background-color: #e5ddd5;
+      display: block;
+    }
+
+    &__title::after {
+      top: 14px;
+      left: 0px;
+    }
+
+    &__title::before {
+      top: 14px;
+      right: 0px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+      padding-bottom: 0;
+      margin-bottom: 65px;
+      justify-content: space-between;
+    }
+    &__item {
+      width: 50%;
+      margin-bottom: 35px;
+      margin-right: 70px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &__item:nth-child(3n) {
+      margin-bottom: 0;
+    }
+    &__checkmark {
+      top: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-service {
+    width: 960px;
+    &__list {
+      height: 120px;
+      justify-content: space-between;
+    }
+    &__item {
+      width: 33%;
+      margin-right: 50px;
+    }
+    &__item:nth-child(2n){
+      margin-bottom: 0;
+    }
+    &__title::after,
+    &__title::before {
+      width: 280px;
+    }
+
+  }
+}

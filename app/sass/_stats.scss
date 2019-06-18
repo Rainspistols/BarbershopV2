@@ -1,41 +1,47 @@
 .stats {
   display: flex;
   flex-wrap: wrap;
+
   &__header {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    background-color: #ffffff;
   }
+
   &__slogan {
     font-family: 'PT Sans Narrow', sans-serif, arial;
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
     color: black;
-    margin:0;
+    margin: 0;
     padding: 25px 0 20px;
     margin: auto;
     text-align: center;
     width: 100%;
     text-transform: uppercase;
   }
+
   &__intro {
     font-family: 'PT Sans Narrow', sans-serif, arial;
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
     color: black;
-    margin:0;
-    padding: 0 0 30px 0;
+    margin: 0;
+    padding: 0 20px 30px 20px;
     margin: auto;
     text-align: center;
     width: 100%;
   }
+
   &__table {
     width: 100%;
     border-collapse: collapse;
     color: #ffffff;
   }
+
   &__table-row {
     display: flex;
     flex-wrap: wrap;
@@ -43,26 +49,33 @@
     padding: 15px 20px;
     height: 80px;
     box-sizing: border-box;
+    align-items: center;
   }
+
   &__table-row:nth-child(even) {
     background-color: #404040;
   }
+
   &__table-row:nth-child(odd) {
     background-color: #4e4e4e;
   }
+
   &__value {
     font-family: 'PT Sans Narrow', sans-serif, arial;
     font-weight: 700;
     font-size: 40px;
     padding: 0;
   }
+
   &__field {
     text-align: right;
     font-family: 'PT Sans Narrow', sans-serif, arial;
     font-weight: 400;
     font-size: 18px;
     padding: 0;
+    width: 115px;
   }
+
   &__legend {
     font-family: 'PT Sans Narrow', sans-serif, arial;
     font-weight: 400;
@@ -75,7 +88,159 @@
     color: rgba(255, 255, 255, 0.3);
     padding-top: 15px;
   }
+
   &__legend--top {
     display: none;
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    height: 51px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .stats {
+    margin: 0 auto;
+    margin-top: -186.4px;
+    padding: 0 65px;
+    z-index: 2;
+    max-width: 640px;
+
+    &__slogan,
+    &__intro,
+    &__table-row {
+      width: 50%;
+      height: auto;
+      box-sizing: border-box;
+    }
+
+    &__slogan {
+      font-size: 40px;
+      line-height: 40px;
+      text-transform: none;
+      padding: 35px 35px 20px;
+      text-align: left;
+      position: relative;
+      background-color: #ffffff;
+    }
+
+    &__slogan::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 23px 23px 0;
+      border-color: transparent #ffffff transparent transparent;
+      left: -23px;
+      top: 45px;
+    }
+
+    &__intro {
+      padding: 35px 80px 20px 35px;
+      margin: 0;
+      text-align: left;
+      background-color: #ffffff;
+    }
+
+    &__legend--top {
+      display: flex;
+      padding: 0 35px 25px;
+      background-color: #ffffff;
+      color: rgba(0, 0, 0, 0.3);
+      width: 100%;
+    }
+
+    &__table-row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      padding: 20px 0px 30px 35px;
+    }
+
+    &__table-row:nth-child(1) {
+      background-color: #404040;
+    }
+
+    &__table-row:nth-child(2) {
+      background-color: #4e4e4e;
+    }
+
+    &__table-row:nth-child(3) {
+      background-color: #353535;
+    }
+
+    &__table-row:nth-child(4) {
+      background-color: #404040;
+    }
+
+    &__value {
+      width: 100%;
+      font-size: 72px;
+    }
+
+    &__field {
+      width: auto;
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    tbody {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__legend--bottom {
+      display: none;
+    }
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .stats {
+    max-width: 960px;
+    flex-wrap: wrap;
+    margin-top: -170px;
+
+    &__table {
+      width: 640px;
+    }
+
+    &__header,
+    tbody {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    tbody {
+      height: 340px;
+      width: 640px;
+    }
+
+    &__header {
+      width: 320px;
+      box-sizing: border-box;
+    }
+
+    &__slogan,
+    &__intro,
+    &__table-row {
+      margin: 0;
+      max-width: 320px;
+      width: 100%;
+    }
+
+    &__legend--top {
+      width: 320px;
+      box-sizing: border-box;
+    }
+    &__intro {
+      margin-bottom: 12px;
+    }
   }
 }

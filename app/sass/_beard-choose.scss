@@ -8,6 +8,7 @@
     text-align: center;
     margin: 0 0 95px 0;
   }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -19,9 +20,11 @@
     line-height: 24px;
     margin: 0;
   }
+
   &__item {
     width: 33.3%;
     text-align: center;
+
     .beard-choose__radio {
       position: absolute;
       opacity: 0;
@@ -30,24 +33,30 @@
       width: 0;
     }
   }
+
   &__item:first-child {
     margin-bottom: 190px;
   }
+
   &__item:last-child {
     margin-bottom: 166px;
   }
+
   &__item:nth-child(3n) {
     margin-right: 0;
   }
+
   &__label {
     position: relative;
   }
+
   &__label::after {
     content: "";
     position: absolute;
     background-position: 0 0;
     background-repeat: no-repeat;
   }
+
   &__label--admiral::after {
     background-image: url(../../app/img/beard-admiral.svg);
     width: 52px;
@@ -55,6 +64,7 @@
     bottom: -60px;
     left: 2px;
   }
+
   &__label--lumberman::after {
     background-image: url(../../app/img/beard-lumberman.svg);
     width: 58px;
@@ -62,6 +72,7 @@
     bottom: -78px;
     left: -4px;
   }
+
   &__label--iceman::after {
     background-image: url(../../app/img/beard-iceman.svg);
     width: 63px;
@@ -69,6 +80,7 @@
     bottom: -78px;
     left: 5px;
   }
+
   &__label--boyar::after {
     background-image: url(../../app/img/beard-boyar.svg);
     width: 57px;
@@ -76,13 +88,15 @@
     bottom: -106px;
     left: -3px;
   }
+
   &__label--sage::after {
     background-image: url(../../app/img/beard-sage.svg);
     width: 45px;
     height: 104px;
     bottom: -114px;
-    left: 1px;
+    left: 2px;
   }
+
   &__checkmark {
     width: 50px;
     height: 50px;
@@ -93,7 +107,9 @@
     top: -60px;
     left: 0px;
     border: 1px solid #e6ded6;
+    box-sizing: border-box;
   }
+
   &__checkmark::after {
     content: "";
     width: 17px;
@@ -106,7 +122,85 @@
     left: 15px;
     display: none;
   }
-  &__radio:checked ~ &__checkmark::after {
+
+  &__radio:checked~&__checkmark::after {
     display: block;
   }
+}
+
+
+@media (min-width: $tablet-width) {
+  .beard-choose {
+    width: 640px;
+    padding: 0;
+    box-sizing: border-box;
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+      position: relative;
+      margin-bottom: 125px;
+    }
+
+    &__title::after,
+    &__title::before {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 1px;
+      background-color: #e5ddd5;
+      display: block;
+    }
+
+    &__title::after {
+      top: 14px;
+      left: 0px;
+    }
+
+    &__title::before {
+      top: 14px;
+      right: 0px;
+    }
+
+    &__item {
+      width: 20%;
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &__checkmark {
+      top: -75px;
+      left: 4px;
+    }
+
+    &__label--admiral::after {
+      bottom: -85px;
+    }
+
+    &__label--lumberman::after {
+      bottom: -103px;
+    }
+
+    &__label--iceman::after {
+      bottom: -103px;
+    }
+
+    &__label--boyar::after {
+      bottom: -131px;
+    }
+
+    &__label--sage::after {
+      bottom: -139px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .beard-choose {
+    width: 960px;
+    &__title::after,
+    &__title::before {
+      width: 280px;
+    }
+  }
+
 }

@@ -19,6 +19,11 @@
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
   }
 
   &__button {
@@ -27,5 +32,44 @@
     font-size: 18px;
     line-height: 27px;
     margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 26px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    .contacts {
+      &__text {
+        margin-bottom: 0;
+      }
+
+      &__button {
+        border: none;
+        font-family: 'PT Sans Narrow', sans-serif, arial;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+
+    &__text {
+      text-align: left;
+      display: block;
+    }
+
+    &__title {
+      text-transform: uppercase;
+    }
   }
 }

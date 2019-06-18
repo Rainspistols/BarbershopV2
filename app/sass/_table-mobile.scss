@@ -1,0 +1,41 @@
+.table-mobile {
+  width: 100%;
+  margin-bottom: 20px;
+  &__title {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  &__term,
+  &__price {
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+    padding: 0;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  &__table-row {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__term {
+    width: 75%;
+  }
+  &__price {
+    width: auto;
+    padding-top: 0;
+    margin-bottom: auto;
+    display: inline-block;
+  }
+}

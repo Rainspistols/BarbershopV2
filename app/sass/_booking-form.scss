@@ -1,6 +1,7 @@
 .booking-form {
   padding: 32px 20px 40px 20px;
   background-color: #f8f5f2;
+  position: relative;
   &__title {
     font-family: 'PT Sans Narrow', sans-serif, arial;
     font-weight: 700;
@@ -10,18 +11,22 @@
     text-align: center;
     margin: 0 0 34px;
   }
+
   &__button-main {
     display: none;
   }
+
   &__names-wrap,
   &__contacts-wrap {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 27px;
   }
+
   &__contacts-wrap {
     margin-bottom: 29px;
   }
+
   &__item {
     width: 100%;
     border: 1px solid #e5ddd5;
@@ -30,17 +35,121 @@
     font-size: 18px;
     line-height: 30px;
     color: black;
-    padding: 12px 0 15px 20px;
+    padding: 12px 20px 15px 20px;
     height: 50px;
     box-sizing: border-box;
     margin-bottom: 6px;
   }
+
   &__item::placeholder {
     color: black;
   }
+
   &__textarea {
     min-height: 110px;
     padding: 12px 19px 0 19px;
     margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .booking-form {
+    width: 640px;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    padding-top: 60px;
+
+    &__title {
+      text-align: left;
+      font-size: 40px;
+      margin-bottom: 0;
+      display: flex;
+      align-self: center;
+    }
+
+    &__button-main {
+      display: block;
+      width: 25%;
+      text-transform: uppercase;
+      height: 50px;
+      box-sizing: border-box;
+    }
+
+    &__title-wrap {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 67px;
+    }
+    &__item {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &__names-wrap {
+      flex-wrap: nowrap;
+      margin-bottom: 35px;
+
+      .booking-form__item {
+        border-right: none;
+        height: 70px;
+      }
+
+      .booking-form__item:last-child {
+        border-right: 1px solid #e5ddd5;
+      }
+
+      .booking-form__item:nth-child(2) {
+        order: -1;
+      }
+    }
+
+    &__contacts-wrap {
+      margin-bottom: 0;
+
+      .booking-form__item {
+        margin-bottom: 35px;
+        height: 70px;
+      }
+    }
+
+    &__textarea {
+      height: 210px;
+      margin-bottom: 55px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &__button {
+      height: 70px;
+      margin-bottom: 75px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .booking-form {
+    width: 960px;
+    &__names-wrap {
+      .booking-form__item {
+        margin-right: 40px;
+        border: 1px solid #e5ddd5;
+      }
+      .booking-form__item:last-child {
+        margin-right: 0;
+      }
+    }
+    &__contacts-wrap {
+      flex-wrap: nowrap;
+
+      .booking-form__item:first-child {
+        margin-right: 35px;
+      }
+
+    }
+    &__textarea {
+      margin-bottom: 70px;
+    }
   }
 }

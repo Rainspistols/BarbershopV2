@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px 25px 20px;
+
   &__text {
     font-family: 'PT Sans Narrow', sans-serif, arial;
     font-weight: 400;
@@ -11,4 +12,29 @@
     margin: auto;
     margin-bottom: 15px;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+
+    &__text {
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+.copyright {
+  width: auto;
+  &__text {
+    margin-bottom: 0;
+    height: auto;
+  }
+  &__link {
+    height: auto;
+    margin-bottom: auto;
+  }
+}
 }

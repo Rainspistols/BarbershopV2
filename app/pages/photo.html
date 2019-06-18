@@ -11,23 +11,24 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body class="photo-body">
 
   <header class="page-header">
-    <a href="#" class="logo">
-      <img src="../img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="logo-image">
-    </a>
     <nav class="main-nav">
+      <a href="#" class="logo photo-header__logo">
+        <img src="../img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="logo__image">
+      </a>
       <div class="mobile-nav--closed">
         <p class="mobile-nav--closed__title">Работы</p>
         <button class="mobile-nav--closed__toggle" type="button" aria-label="открыть меню">
+          <img src="../img/menu-icon.svg" alt="" class="mobile-nav--closed__toggle-img" width="36px" height="19px">
           <!-- Нужно поменять путь картинки на build  -->
         </button>
       </div>
       <div class="mobile-nav--open">
         <ul class="mobile-nav--open__list">
           <li class="mobile-nav--open__item">
-            <a href="#" class="mobile-nav--open__link">ГЛАВНАЯ</a>
+            <a href="#" class="mobile-nav--open__link mobile-nav--open__link--curent">ГЛАВНАЯ</a>
           </li>
           <li class="mobile-nav--open__item">
             <a href="#" class="mobile-nav--open__link">Наши работы</a>
@@ -44,6 +45,7 @@
         </ul>
         <ul class="mobile-nav--open__user-list">
           <li class="mobile-nav--open__user-item">
+            <img src="../img/login.svg" alt="" class="mobile-nav--open__user-icon" width="16" height="16">
             <button type="button" class="mobile-nav--open__user-button">Войти</button>
           </li>
         </ul>
@@ -52,7 +54,7 @@
   </header>
 
   <main class="main-photo">
-    <section class="our-portfolio triangle-block">
+    <section class="our-portfolio">
       <div class="our-portfolio__wrap">
         <h1 class="our-portfolio__title">наши работы</h1>
         <a href="index.html" class="our-portfolio__button button">На главную</a>
@@ -60,7 +62,8 @@
         <section class="our-portfolio__best-work">
           <img src="../img/photo-1-mobile.jpg" class="our-portfolio__image" alt="Лучшая работа месяца" width="280"
             height="480">
-          <p class="our-portfolio__sticker sticker">Работа месяца</p>
+          <p class=" sticker our-portfolio__sticker">Работа месяца</p>
+          <p class="our-portfolio__sticker--reverse sticker--reverse">Работа месяца</p>
           <div class="our-portfolio__best-work-description">
             <b class="our-portfolio__customer-name">Лжепётр Мчиславский</b>
             <cite class="our-portfolio__customer-comment">Где я только не стригся, но так как делаете это
@@ -106,7 +109,8 @@
             height="176">
           <div class="our-portfolio__best-work-description">
             <b class="our-portfolio__customer-name">Саша Мальцев</b>
-            <cite class="our-portfolio__customer-comment">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
+            <cite class="our-portfolio__customer-comment">Как только заростаю и волосы начинают мешать видеть — бегом в
+              Бородинский!
             </cite>
             <div class="our-portfolio__type-of-service type-of-service">
               <p class="our-portfolio__type-of-service-item1 type-of-service__trimming">Стрижка</p>
@@ -120,38 +124,60 @@
 
     <section class="price-list">
       <div class="price-list__wrap">
-        <table class="price-list__table">
-          <caption class="price-list__title">ПРЕЙСКУРАНТ</caption>
-          <tr class="price-list__table-row">
-            <td class="price-list__service">
-              <b class="price-list__service-add">Классическая стрижка</b><br>
-              (с мытьём головы)</td>
-            <td class="price-list__service">1 500 руб.</td>
+        <table class="price-list__table-mobile table-mobile">
+          <caption class="table-mobile__title">ПРЕЙСКУРАНТ</caption>
+          <tr class="table-mobile__table-row">
+            <td class="table-mobile__term"><b>Классическая стрижка</b><br>(с мытьём головы)</td>
+            <td class="table-mobile__price">1 500 руб.</td>
           </tr>
-          <tr class="price-list__table-row">
-            <td class="price-list__service">
-              <b class="price-list__service-add">Современный вариант</b><br>
-              (с мытьём головы)</td>
-            <td class="price-list__service">1 500 руб.</td>
+          <tr class="table-mobile__table-row">
+            <td class="table-mobile__term"><b>Современный вариант</b><br>(с мытьём головы)</td>
+            <td class="table-mobile__price">1 500 руб.</td>
           </tr>
-          <tr class="price-list__table-row">
-            <td class="price-list__service">
-              <b class="price-list__service-add">Индивидуальный подход</b><br>
-              (с мытьём головы)</td>
-            <td class="price-list__service">2 000 руб.</td>
+          <tr class="table-mobile__table-row">
+            <td class="table-mobile__term"><b>Индивидуальный подход</b><br>(с мытьём головы)</td>
+            <td class="table-mobile__price">2 000 руб.</td>
           </tr>
-          <tr class="price-list__table-row">
-            <td class="price-list__service">
-              <b class="price-list__service-add">Бритьё головы</b><br>
-              (без мытья)</td>
-            <td class="price-list__service">500 руб.</td>
+          <tr class="table-mobile__table-row">
+            <td class="table-mobile__term"><b>Бритьё головы</b><br>(без мытья)</td>
+            <td class="table-mobile__price">500 руб.</td>
           </tr>
-          <tr class="price-list__table-row">
-            <td class="price-list__service">
-              <b class="price-list__service-add">Бритьё головы</b><br>
-              (с мытьём головы)
-            </td>
-            <td class="price-list__service">1 000 руб.</td>
+          <tr class="table-mobile__table-row">
+            <td class="table-mobile__term"><b>Бритьё головы</b><br>(с мытьём головы)</td>
+            <td class="table-mobile__price">1 000 руб.</td>
+          </tr>
+        </table>
+        <table class="price-list__table-tablet table-tablet">
+          <caption class="table-tablet__title">ПРЕЙСКУРАНТ</caption>
+          <tr class="table-tablet__table-row">
+            <td class="table-tablet__numbers">1</td>
+            <th class="table-tablet__term">Классическая стрижка</th>
+            <td class="table-tablet__definition">с мытьём головы</>
+            <td class="table-tablet__price">1 500 руб.</td>
+          </tr>
+          <tr class="table-tablet__table-row">
+            <td class="table-tablet__numbers">2</td>
+            <th class="table-tablet__term">Современный вариант</th>
+            <td class="table-tablet__definition">с мытьём головы</td>
+            <td class="table-tablet__price">1 500 руб.</td>
+          </tr>
+          <tr class="table-tablet__table-row">
+            <td class="table-tablet__numbers">3</td>
+            <th class="table-tablet__term">Индивидуальный подход</th>
+            <td class="table-tablet__definition">с мытьём головы</td>
+            <td class="table-tablet__price">2 000 руб.</td>
+          </tr>
+          <tr class="table-tablet__table-row">
+            <td class="table-tablet__numbers">4</td>
+            <th class="table-tablet__term">Бритьё головы</th>
+            <td class="table-tablet__definition">без мытья</td>
+            <td class="table-tablet__price">500 руб.</td>
+          </tr>
+          <tr class="table-tablet__table-row">
+            <td class="table-tablet__numbers">5</td>
+            <th class="table-tablet__term">Бритьё головы</th>
+            <td class="table-tablet__definition">с мытьём головы</td>
+            <td class="table-tablet__price">1 000 руб.</td>
           </tr>
         </table>
 
@@ -166,16 +192,16 @@
   </main>
 
   <footer class="page-footer photo-footer">
-    <div class="contacts__wrap">
+    <div class="page-footer__wrap">
       <div class="page-footer__contacts contacts">
         <b class="contacts__title">Барбершоп Бородинский</b>
-        <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8
-          <a href="tel:+78125556666" class="button button--black contacts__button">
-            <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
-          </a>
-        </p>
+        <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+        <a href="tel:+78125556666" class="button button--black contacts__button">
+          <span>+7 (812) 555-66-66</span>
+        </a>
       </div>
       <div class="page-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
             <a href="https://vk.com" class="social__link social__link--vkontakte" aria-label="Мы в Вконтакте"></a>

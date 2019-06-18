@@ -11,49 +11,52 @@
     rel="stylesheet">
 </head>
 
-<body>
-  <header class="page-header">
-    <a href="#" class="logo">
-      <img src="../img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="logo-image">
+<body class="booking-form-body" <header class="page-header">
+  <nav class="main-nav">
+    <a href="#" class="logo photo-header__logo">
+      <img src="../img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="logo__image">
     </a>
-    <nav class="main-nav">
-      <div class="mobile-nav--closed">
-        <p class="mobile-nav--closed__title">Записаться</p>
-        <button class="mobile-nav--closed__toggle" type="button" aria-label="открыть меню">
-          <!-- Нужно поменять путь картинки на build  -->
-        </button>
-      </div>
-      <div class="mobile-nav--open">
-        <ul class="mobile-nav--open__list">
-          <li class="mobile-nav--open__item">
-            <a href="#" class="mobile-nav--open__link">ГЛАВНАЯ</a>
-          </li>
-          <li class="mobile-nav--open__item">
-            <a href="#" class="mobile-nav--open__link">Наши работы</a>
-          </li>
-          <li class="mobile-nav--open__item">
-            <a href="#" class="mobile-nav--open__link">Записаться</a>
-          </li>
-          <li class="mobile-nav--open__item">
-            <a href="#" class="mobile-nav--open__link">Контакты</a>
-          </li>
-          <li class="mobile-nav--open__item">
-            <a href="#" class="mobile-nav--open__link">HTML ACADEMY</a>
-          </li>
-        </ul>
-        <ul class="mobile-nav--open__user-list">
-          <li class="mobile-nav--open__user-item">
-            <button type="button" class="mobile-nav--open__user-button">Войти</button>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="mobile-nav--closed">
+      <p class="mobile-nav--closed__title">Записаться</p>
+      <button class="mobile-nav--closed__toggle" type="button" aria-label="открыть меню">
+        <img src="../img/menu-icon.svg" alt="" class="mobile-nav--closed__toggle-img" width="36px" height="19px">
+        <!-- Нужно поменять путь картинки на build  -->
+      </button>
+    </div>
+    <div class="mobile-nav--open">
+      <ul class="mobile-nav--open__list">
+        <li class="mobile-nav--open__item">
+          <a href="#" class="mobile-nav--open__link mobile-nav--open__link--curent">ГЛАВНАЯ</a>
+        </li>
+        <li class="mobile-nav--open__item">
+          <a href="#" class="mobile-nav--open__link">Наши работы</a>
+        </li>
+        <li class="mobile-nav--open__item">
+          <a href="#" class="mobile-nav--open__link">Записаться</a>
+        </li>
+        <li class="mobile-nav--open__item">
+          <a href="#" class="mobile-nav--open__link">Контакты</a>
+        </li>
+        <li class="mobile-nav--open__item">
+          <a href="#" class="mobile-nav--open__link">HTML ACADEMY</a>
+        </li>
+      </ul>
+      <ul class="mobile-nav--open__user-list">
+        <li class="mobile-nav--open__user-item">
+          <img src="../img/login.svg" alt="" class="mobile-nav--open__user-icon" width="16" height="16">
+          <button type="button" class="mobile-nav--open__user-button">Войти</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
   </header>
 
   <main class="booking-main">
     <article class="booking-form">
-      <h1 class="booking-form__title">Запись на стрижку</h1>
-      <a href="index.html" class="booking-form__button-main button">На главную</a>
+      <div class="booking-form__title-wrap">
+        <h1 class="booking-form__title">Запись на стрижку</h1>
+        <a href="index.html" class="booking-form__button-main button">На главную</a>
+      </div>
       <form class="booking-form__list" method="POST" action="https://echo.htmlacademy.ru/">
         <div class="booking-form__names-wrap">
           <input class="booking-form__item" type="text" placeholder="Фамилия" name="surname">
@@ -115,7 +118,8 @@
             </li>
             <li class="additional-service__item">
               <label class="additional-service__label">Накрутить усы
-                <input type="checkbox" class="additional-service__checkbox-origin" name="additional service" value="Накрутить усы">
+                <input type="checkbox" class="additional-service__checkbox-origin" name="additional service"
+                  value="Накрутить усы">
                 <span class="additional-service__checkmark"></span>
               </label>
             </li>
@@ -128,40 +132,43 @@
             </li>
             <li class="additional-service__item">
               <label class="additional-service__label">Подровнять виски
-                <input type="checkbox" class="additional-service__checkbox-origin" name="additional service" value="Подровнять виски">
+                <input type="checkbox" class="additional-service__checkbox-origin" name="additional service"
+                  value="Подровнять виски">
                 <span class="additional-service__checkmark"></span>
               </label>
             </li>
             <li class="additional-service__item">
               <label class="additional-service__label">Убрать седину
-                <input type="checkbox" class="additional-service__checkbox-origin" name="additional service" value="Убрать седину">
+                <input type="checkbox" class="additional-service__checkbox-origin" name="additional service"
+                  value="Убрать седину">
                 <span class="additional-service__checkmark"></span>
               </label>
             </li>
             <li class="additional-service__item">
               <label class="additional-service__label">Отполировать лысину
-                <input type="checkbox" class="additional-service__checkbox-origin" name="additional service" value="Отполировать лысину">
+                <input type="checkbox" class="additional-service__checkbox-origin" name="additional service"
+                  value="Отполировать лысину">
                 <span class="additional-service__checkmark"></span>
               </label>
             </li>
           </ul>
         </div>
-        <button type="submit" class="button button--826550">Отправить заявку</button>
+        <button type="submit" class="booking-form__button button button--826550">Отправить заявку</button>
       </form>
     </article>
   </main>
 
   <footer class="page-footer photo-footer">
-    <div class="contacts__wrap">
+    <div class="page-footer__wrap">
       <div class="page-footer__contacts contacts">
         <b class="contacts__title">Барбершоп Бородинский</b>
-        <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8
-          <a href="tel:+78125556666" class="button button--black contacts__button">
-            <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
-          </a>
-        </p>
+        <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+        <a href="tel:+78125556666" class="button button--black contacts__button">
+          <span>+7 (812) 555-66-66</span>
+        </a>
       </div>
       <div class="page-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
             <a href="https://vk.com" class="social__link social__link--vkontakte" aria-label="Мы в Вконтакте"></a>
