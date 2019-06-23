@@ -18,6 +18,7 @@
     padding: 0;
     background-image: url(../../app/img/back-tablet.jpg);
     background-position: center bottom;
+    background-size: cover;
 
     &__image {
       margin-top: 39px;
@@ -29,5 +30,8 @@
   .logo {
     background-image: url(../../app/img/back-desktop.jpg);
     height: 650px;
+    &__image {
+      margin-top: 57px;
+    }
   }
 }
