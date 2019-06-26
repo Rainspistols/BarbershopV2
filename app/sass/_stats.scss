@@ -1,6 +1,7 @@
 .stats {
   display: flex;
   flex-wrap: wrap;
+  widows: 100%;
 
   &__header {
     display: flex;
@@ -103,10 +104,14 @@
 @media (min-width: $tablet-width) {
   .stats {
     margin: 0 auto;
-    margin-top: -186.4px;
+    margin-top: -186px;
     padding: 0 65px;
     z-index: 2;
-    max-width: 640px;
+    width: 84%;
+    max-width: 960px;
+    &__wrap {
+      background-color: #353535;
+    }
 
     &__slogan,
     &__intro,

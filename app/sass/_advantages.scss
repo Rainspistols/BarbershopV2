@@ -27,11 +27,20 @@
     padding-bottom: 44px;
     box-sizing: border-box;
     display: block;
+    &--cool {
+      display: block;
+    }
+
+    &--expensive {
+      display: none;
+    }
+    &--quick {
+      display: none;
+    }
   }
 
   &__img {
     margin: 30px 0;
-    width: 100%;
   }
 
   &__title {
@@ -44,6 +53,7 @@
     margin: 0 0 8px;
     color: #ffffff;
     padding-top: 40px;
+    padding: 0;
   }
 
   &__description {
@@ -54,14 +64,6 @@
     padding: 0 30px;
     margin: 0;
     color: #ffffff;
-  }
-
-  &__item--cool {
-    display: none;
-  }
-
-  &__item--expensive {
-    display: none;
   }
 
   &__toggles {
@@ -93,7 +95,8 @@
     }
 
     &__list {
-      width: 640px;
+      width: 84%;
+      max-width: 960px;
       margin: auto;
       padding: 0 20px;
       background-color: #353535;

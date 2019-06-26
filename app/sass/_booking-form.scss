@@ -54,7 +54,8 @@
 
 @media (min-width: $tablet-width) {
   .booking-form {
-    width: 640px;
+    width: 84%;
+    max-width: 980px;
     box-sizing: border-box;
     margin: auto;
     padding: 0;

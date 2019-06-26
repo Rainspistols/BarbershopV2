@@ -1,9 +1,9 @@
 $tablet-width:768px;
-
 $desktop-width:1200px;
+$mobile-width-only: 767px;
 
 @import "logo";
-@import "mobile-nav";
+@import "main-nav";
 @import "stats";
 @import "advantages";
 @import "slider";
@@ -25,32 +25,48 @@ $desktop-width:1200px;
 @import "page-footer";
 @import "table-tablet";
 @import "table-mobile";
+@import "site-list";
+@import "user-list";
+@import "page-header";
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #353535;
+  min-width: 320px;
 }
 
-.visually-hidden {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.main-nav {
-  display: flex;
-  flex-wrap: wrap;
+.js-show {
+  display: block
 }
+
+.js-none {
+  display: none;
+}
+
 
 .booking-main {
   position: relative;
   z-index: 2;
+  background-color: #f8f5f2;
 
   &::after {
     content: "";
@@ -70,6 +86,9 @@ body {
     }
   }
 }
+.booking-header {
+  background-color: #f8f5f2;
+}
 
 
   @media (min-width:$tablet-width) {
@@ -78,8 +97,8 @@ body {
         clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
         background-color: #f8f5f2;
         height: 210px;
-        background-image: url(../../app/img/back-tablet@1x.jpg);
-        background-position: center bottom;
+        background-position: center -110px;
+        background-size: auto;
       }
     }
 
@@ -97,7 +116,13 @@ body {
       &__logo {
         height: 310px;
         background-image: url(../../app/img/back-desktop.jpg);
-        background-position: center -60px;
+
       }
     }
+  }
+
+
+  .main-photo {
+    z-index: 2;
+    position: relative;
   }

@@ -14,15 +14,16 @@
 @media (min-width: $tablet-width) {
   .logo {
     height: 400px;
-    margin: auto;
     padding: 0;
     background-image: url(../../app/img/back-tablet.jpg);
-    background-position: center bottom;
+    background-position: center 0px;
     background-size: cover;
+    pointer-events: none;
 
     &__image {
       margin-top: 39px;
     }
+
   }
 }
 
@@ -30,6 +31,8 @@
   .logo {
     background-image: url(../../app/img/back-desktop.jpg);
     height: 650px;
+    background-position: center -0px;
+    background-size: cover;
     &__image {
       margin-top: 57px;
     }

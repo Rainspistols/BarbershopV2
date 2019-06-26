@@ -14,39 +14,38 @@
 <body class="photo-body">
 
   <header class="page-header">
-    <nav class="main-nav">
-      <a href="#" class="logo photo-header__logo">
-        <img src="../img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="logo__image">
-      </a>
-      <div class="mobile-nav--closed">
-        <p class="mobile-nav--closed__title">Работы</p>
-        <button class="mobile-nav--closed__toggle" type="button" aria-label="открыть меню">
-          <img src="../img/menu-icon.svg" alt="" class="mobile-nav--closed__toggle-img" width="36px" height="19px">
-          <!-- Нужно поменять путь картинки на build  -->
-        </button>
-      </div>
-      <div class="mobile-nav--open">
-        <ul class="mobile-nav--open__list">
-          <li class="mobile-nav--open__item">
-            <a href="../index.html" class="mobile-nav--open__link">ГЛАВНАЯ</a>
+    <a href="#" class="logo photo-header__logo">
+      <img src="../img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="logo__image">
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button" aria-label="открыть меню">
+      </button>
+      <div class="main-nav__wrap">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="../index.html">ГЛАВНАЯ</a>
           </li>
-          <li class="mobile-nav--open__item">
-            <a class="mobile-nav--open__link mobile-nav--open__link--curent">Наши работы</a>
+          <li class="site-list__item site-list__item--active">
+            <a>Наши работы</a>
           </li>
-          <li class="mobile-nav--open__item">
-            <a href="booking.html" class="mobile-nav--open__link">Записаться</a>
+          <li class="site-list__item">
+            <a href="booking.html">Записаться</a>
           </li>
-          <li class="mobile-nav--open__item">
-            <a href="#" class="mobile-nav--open__link">Контакты</a>
+          <li class="site-list__item">
+            <a href="#">Контакты</a>
           </li>
-          <li class="mobile-nav--open__item">
-            <a href="#" class="mobile-nav--open__link">RAINSPISTOLS</a>
+          <li class="site-list__item">
+              <a href="https://github.com/Rainspistols" target="_blank">RAINSPISTOLS</a>
           </li>
         </ul>
-        <ul class="mobile-nav--open__user-list">
-          <li class="mobile-nav--open__user-item">
-            <img src="../img/login.svg" alt="" class="mobile-nav--open__user-icon" width="16" height="16">
-            <button type="button" class="mobile-nav--open__user-button">Войти</button>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <button type="button" class="user-list__btn">Войти</button>
+            <svg class="user-list__user-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+              viewBox="0 0 16 16" xml:space="preserve">
+              <path class="st0" d="M0 7h7V4.1L11 8l-4 3.9V9.1L0 9z" />
+              <path class="st0" d="M7 0v2h7v12H7v2h9V0z" />
+            </svg>
           </li>
         </ul>
       </div>
@@ -217,11 +216,13 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a href="#" class="copyright__link button button--black">Rainspistols</a>
+        <a href="https://github.com/Rainspistols" target="_blank" class="copyright__link button button--black">Rainspistols</a>
       </div>
     </div>
   </footer>
 
+
+  <script src="../js/_main-nav.js"></script>
 </body>
 
 </html>

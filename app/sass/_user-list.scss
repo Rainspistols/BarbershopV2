@@ -1,0 +1,126 @@
+.user-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  line-height: 18px;
+  text-decoration: none;
+  color: #ffffff;
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    min-height: 51px;
+    color: #ffffff;
+    font-family: 'PT Sans Narrow', sans-serif, arial;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 49px;
+    padding-right: 17px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  &__user-icon {
+    width: 16px;
+    height: 16px;
+    fill: #ffffff;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 21px;
+    opacity: 0.3;
+  }
+}
+
+@media(max-width:$mobile-width-only) {
+  .user-list {
+    &__item a {
+      width: 100%;
+      background-color: #6a4d38;
+    }
+
+    &__item:hover {
+      background-color: #5e4431;
+    }
+
+    &__item:hover &__user-icon {
+      opacity: 0.7;
+    }
+
+    &__item:active {
+      background-color: #433226;
+    }
+
+    &__item:active &__user-icon {
+      opacity: 1;
+    }
+  }
+}
+
+@media(min-width:$tablet-width) {
+  .user-list {
+    width: 60px;
+    &__btn {
+      width: 60px;
+      height: 70px;
+      padding: 0;
+      font-size: 0;
+      &:hover ~ .user-list__user-icon {
+        opacity: 1;
+        fill: #826550;
+      }
+      &:active ~ .user-list__user-icon {
+        opacity: 0.3;
+        fill: #ffffff;
+      }
+    }
+    &__user-icon {
+      left: 11px;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .user-list {
+    width: 160px;
+    &__item {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      margin-left: 30px;
+    }
+    &__btn {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      font-size: 18px;
+      line-height: 24px;
+      padding-left: 61px;
+      padding-right: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover{
+        color: #000000;
+        background-color: #ffffff;
+      }
+      &:active {
+        color: rgba($color: #000000, $alpha: 0.3);
+        background-color: #fff;
+      }
+      &:hover ~ .user-list__user-icon {
+        opacity: 0.3;
+        fill: #000000;
+      }
+      &:active ~ .user-list__user-icon {
+        opacity: 0.1;
+      }
+    }
+    &__user-icon {
+      left: 27px;
+    }
+  }
+}

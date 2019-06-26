@@ -1,0 +1,11 @@
+.page-header--index {
+  background-color: #ffffff;
+}
+
+
+@media(min-width:$tablet-width) {
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
