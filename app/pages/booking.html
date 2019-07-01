@@ -13,7 +13,11 @@
 
 <header class="page-header booking-header">
   <a href="#" class="logo photo-header__logo">
-    <img src="../img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="logo__image">
+      <picture>
+          <source media="(min-width: 1200px)" srcset="../img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="../img/logotype-tablet.svg">
+          <img src="../img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="logo__image">
+        </picture>
   </a>
   <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button" aria-label="открыть меню">

@@ -15,7 +15,11 @@
 
   <header class="page-header">
     <a href="#" class="logo photo-header__logo">
-      <img src="../img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="logo__image">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="../img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="../img/logotype-tablet.svg">
+        <img src="../img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="logo__image">
+      </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="открыть меню">
@@ -35,7 +39,7 @@
             <a href="#">Контакты</a>
           </li>
           <li class="site-list__item">
-              <a href="https://github.com/Rainspistols" target="_blank">RAINSPISTOLS</a>
+            <a href="https://github.com/Rainspistols" target="_blank">RAINSPISTOLS</a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
@@ -58,12 +62,15 @@
         <h1 class="our-portfolio__title">наши работы</h1>
         <a href="index.html" class="our-portfolio__button button">На главную</a>
 
-        <section class="our-portfolio__best-work">
-          <img src="../img/photo-1-mobile.jpg" class="our-portfolio__image" alt="Лучшая работа месяца" width="280"
-            height="480">
+        <section class="our-portfolio__best-work our-portfolio__best-work1">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/photo-1-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="../img/photo-1-tablet.jpg">
+            <img src="../img/photo-1-mobile.jpg" class="our-portfolio__image" alt="Лучшая работа месяца">
+          </picture>
           <p class=" sticker our-portfolio__sticker">Работа месяца</p>
           <p class="our-portfolio__sticker--reverse sticker--reverse">Работа месяца</p>
-          <div class="our-portfolio__best-work-description">
+          <div class="our-portfolio__best-work-description our-portfolio__best-work-description1">
             <b class="our-portfolio__customer-name">Лжепётр Мчиславский</b>
             <cite class="our-portfolio__customer-comment">Где я только не стригся, но так как делаете это
               вы
@@ -77,10 +84,13 @@
           </div>
         </section>
 
-        <section class="our-portfolio__best-work">
-          <img src="../img/photo-2-mobile.jpg" class="our-portfolio__image" alt="Лучшая работа месяца" width="280"
-            height="176">
-          <div class="our-portfolio__best-work-description">
+        <section class="our-portfolio__best-work our-portfolio__best-work2">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-2-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="../img/photo-2-tablet.jpg">
+                <img src="../img/photo-2-mobile.jpg" class="our-portfolio__image" alt="Лучшая работа месяца">
+              </picture>
+          <div class="our-portfolio__best-work-description our-portfolio__best-work-description2">
             <b class="our-portfolio__customer-name">Саша Мальцев</b>
             <cite class="our-portfolio__customer-comment">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
             </cite>
@@ -90,10 +100,13 @@
           </div>
         </section>
 
-        <section class="our-portfolio__best-work">
-          <img src="../img/photo-3-mobile.jpg" class="our-portfolio__image" alt="Лучшая работа месяца" width="280"
-            height="176">
-          <div class="our-portfolio__best-work-description">
+        <section class="our-portfolio__best-work our-portfolio__best-work3">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-3-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="../img/photo-3-tablet.jpg">
+                <img src="../img/photo-3-mobile.jpg" class="our-portfolio__image" alt="Лучшая работа месяца">
+              </picture>
+          <div class="our-portfolio__best-work-description our-portfolio__best-work-description3">
             <b class="our-portfolio__customer-name">Владимир Иваныч</b>
             <cite class="our-portfolio__customer-comment">К зимнему сезону — готов! </cite>
             <div class="our-portfolio__type-of-service type-of-service">
@@ -103,10 +116,13 @@
           </div>
         </section>
 
-        <section class="our-portfolio__best-work">
-          <img src="../img/photo-4-mobile.jpg" class="our-portfolio__image" alt="Лучшая работа месяца" width="280"
-            height="176">
-          <div class="our-portfolio__best-work-description">
+        <section class=" our-portfolio__best-work our-portfolio__best-work4">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="../img/photo-4-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="../img/photo-4-tablet.jpg">
+                <img src="../img/photo-4-mobile.jpg" class="our-portfolio__image" alt="Лучшая работа месяца">
+              </picture>
+          <div class="our-portfolio__best-work-description our-portfolio__best-work-description4">
             <b class="our-portfolio__customer-name">Саша Мальцев</b>
             <cite class="our-portfolio__customer-comment">Как только заростаю и волосы начинают мешать видеть — бегом в
               Бородинский!
@@ -216,7 +232,8 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a href="https://github.com/Rainspistols" target="_blank" class="copyright__link button button--black">Rainspistols</a>
+        <a href="https://github.com/Rainspistols" target="_blank"
+          class="copyright__link button button--black">Rainspistols</a>
       </div>
     </div>
   </footer>

@@ -16,7 +16,11 @@
 
   <header class="page-header page-header--index">
     <a href="index.html" class="logo">
-      <img src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="logo__image">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский" class="logo__image">
+      </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="открыть меню">
@@ -27,7 +31,7 @@
             <a>ГЛАВНАЯ</a>
           </li>
           <li class="site-list__item">
-            <a href="pages/photo.html" >Наши работы</a>
+            <a href="pages/photo.html">Наши работы</a>
           </li>
           <li class="site-list__item">
             <a href="pages/booking.html">Записаться</a>
@@ -122,7 +126,7 @@
         <button class="slider__toggle slider__toggle2" type="button" aria-label="2"></button>
         <button class="slider__toggle slider__toggle3" type="button" aria-label="3"></button>
       </p>
-      </section>
+    </section>
 
     <section class="news page-main__news">
       <div class="news__wrap">
@@ -170,7 +174,12 @@
           <button type="button" class="button reviews__button-left">&#9204</button>
           <blockquote class="reviews__item reviews__item1">
             <p class="reviews__author-picture">
-              <img src="img/travis.png" alt="фото Трэвиса Баркера" class="reviews__author-image" width="50" height="50">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/travis-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/travis-tablet.png">
+                <img src="img/travis.png" alt="фото Трэвиса Баркера" class="reviews__author-image" width="50"
+                  height="48">
+              </picture>
             </p>
             <div class="reviews__text-wrap">
               <cite class="reviews__author-name">Трэвис Баркер</cite>
@@ -180,7 +189,12 @@
           </blockquote>
           <blockquote class="reviews__item reviews__item2">
             <p class="reviews__author-picture">
-              <img src="img/travis.png" alt="фото Джона Смита" class="reviews__author-image" width="50" height="50">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/travis-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/travis-tablet.png">
+                <img src="img/travis.png" alt="фото Трэвиса Баркера" class="reviews__author-image" width="50"
+                  height="48">
+              </picture>
             </p>
             <div class="reviews__text-wrap">
               <cite class="reviews__author-name">Джон Смит</cite>
@@ -189,7 +203,12 @@
           </blockquote>
           <blockquote class="reviews__item reviews__item3">
             <p class="reviews__author-picture">
-              <img src="img/travis.png" alt="Фото Ивана Бородайло" class="reviews__author-image" width="50" height="50">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/travis-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/travis-tablet.png">
+                <img src="img/travis.png" alt="фото Трэвиса Баркера" class="reviews__author-image" width="50"
+                  height="48">
+              </picture>
             </p>
             <div class="reviews__text-wrap">
               <cite class="reviews__author-name">Иван Бородайло</cite>
@@ -234,7 +253,8 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a href="https://github.com/Rainspistols" target="_blank" class="copyright__link button button--black">Rainspistols</a>
+        <a href="https://github.com/Rainspistols" target="_blank"
+          class="copyright__link button button--black">Rainspistols</a>
       </div>
     </div>
   </footer>

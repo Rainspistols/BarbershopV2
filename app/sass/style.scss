@@ -14,9 +14,9 @@ $mobile-width-only: 767px;
 @import "social";
 @import "copyright";
 @import "client-aria";
-@import "our-portfolio";
 @import "sticker";
 @import "type-of-service";
+@import "our-portfolio";
 @import "price-list";
 @import "discount-time";
 @import "booking-form";
@@ -38,6 +38,11 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+picture {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visually-hidden:not(:focus):not(:active) {

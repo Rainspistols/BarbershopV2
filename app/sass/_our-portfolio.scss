@@ -5,12 +5,13 @@
 
   &::after {
     content: "";
-    position: absolute;
-    bottom: -35px;
-    left: 0;
+    background-color: inherit;
     width: 100%;
     height: 35px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='35' viewBox='0 0 2 2' preserveAspectRatio='none'%3E%3Cpolygon fill='%23f8f5f2' points='0,0 2,0 1,2'/%3E%3C/svg%3E");
+    bottom: -35px;
+    left: 0;
+    position: absolute;
+    clip-path: polygon(50% 97%, 0 0, 100% 0);
   }
 
   &__title {
@@ -40,6 +41,7 @@
   &__image {
     margin: auto;
     display: block;
+    max-width: none;
   }
 
   &__sticker {
@@ -83,6 +85,7 @@
   .our-portfolio {
     padding-left: 0;
     padding-right: 0;
+
     &::after {
       bottom: -40px;
       height: 40px;
@@ -151,7 +154,9 @@
     }
 
     &__sticker {
-      top: 53px;
+      top: 20px;
+      height: 50px;
+      box-sizing: border-box;
     }
   }
 }
@@ -172,6 +177,61 @@
       .our-portfolio__best-work-description:nth-child(1) {
         padding-top: 130px;
       }
+
+      &:last-child {
+        margin-bottom: auto;
+      }
+    }
+
+    &__best-work1 {
+      margin-bottom: 40px;
+
+      .our-portfolio__best-work-description1 {
+        padding-left: 40px;
+        padding-top: 130px;
+      }
+    }
+
+    &__best-work2,
+    &__best-work3,
+    &__best-work4 {
+      width: 294px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__best-work2 {
+      .our-portfolio__best-work-description2 {
+        padding-left: 33px;
+        padding-right: 33px;
+        height: 250px;
+        padding-top: 20px;
+      }
+    }
+
+    &__best-work3 {
+      .our-portfolio__best-work-description3 {
+        padding-left: 33px;
+        padding-right: 33px;
+        height: 250px;
+        padding-top: 20px;
+      }
+    }
+
+    &__best-work4 {
+      .our-portfolio__best-work-description4 {
+        padding-left: 33px;
+        padding-right: 33px;
+        height: 250px;
+        padding-top: 20px;
+      }
+    }
+
+    &__best-work-description2,
+    &__best-work-description3,
+    &__best-work-description4 {
+      padding-left: 35px;
+      padding-right: 35px;
     }
 
     &__sticker {
@@ -183,6 +243,11 @@
       right: 0;
       position: absolute;
       top: 40px;
+    }
+
+    &__type-of-service {
+      width: auto;
+      padding-right: 20px;
     }
   }
 }

@@ -4,11 +4,12 @@
 
   &::after {
     content: "";
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='35' viewBox='0 0 2 2' preserveAspectRatio='none'%3E%3Cpolygon fill='%23242424' points='0,0 2,0 1,2'/%3E%3C/svg%3E");
-    position: absolute;
-    bottom: -35px;
+    background-color: #242424;
     width: 100%;
     height: 35px;
+    bottom: -35px;
+    position: absolute;
+    clip-path: polygon(50% 97%, 0 0, 100% 0);
   }
 
   &__list {
@@ -80,13 +81,10 @@
     background-color: #353535;
 
     &::after {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='35' viewBox='0 0 2 2' preserveAspectRatio='none'%3E%3Cpolygon fill='%23353535' points='0,0 2,0 1,2'/%3E%3C/svg%3E");
-      content: "";
-      position: absolute;
-      bottom: -42px;
-      left: 0;
       width: 100%;
       height: 42px;
+      bottom: -42px;
+      background-color: inherit;
     }
 
     &__item--cool,
@@ -114,6 +112,8 @@
         margin-top: 46px;
         margin-bottom: 37px;
         margin-right: 33px;
+        width: 95px;
+        height: 94px;
       }
 
       .advantages__title {
@@ -154,7 +154,6 @@
     width: 100%;
     margin: auto;
     &::after {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='65' viewBox='0 0 2 2' preserveAspectRatio='none'%3E%3Cpolygon fill='%23353535' points='0,0 2,0 1,2'/%3E%3C/svg%3E");
       bottom: -65px;
       height: 65px;
     }
