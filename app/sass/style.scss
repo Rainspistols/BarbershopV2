@@ -75,7 +75,7 @@ picture {
 
   &::after {
     content: "";
-    background-image: url(../../app/img/trianglef8f5f2.svg);
+    background-image: url(../../build/img/trianglef8f5f2.svg);
     position: absolute;
     bottom: -35px;
     width: 100%;
@@ -120,7 +120,7 @@ picture {
     .photo-header {
       &__logo {
         height: 310px;
-        background-image: url(../../app/img/back-desktop.jpg);
+        background-image: url(../../build/img/back-desktop.jpg);
 
       }
     }

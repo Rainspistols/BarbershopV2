@@ -13,7 +13,7 @@
   .logo {
     height: 400px;
     padding: 0;
-    background-image: url(../../app/img/back-tablet.jpg);
+    background-image: url(../../build/img/back-tablet.jpg);
     background-position: center 0px;
     background-size: cover;
     pointer-events: none; }
@@ -22,7 +22,7 @@
 
 @media (min-width: 1200px) {
   .logo {
-    background-image: url(../../app/img/back-desktop.jpg);
+    background-image: url(../../build/img/back-desktop.jpg);
     height: 650px;
     background-position: center -0px;
     background-size: cover; }
@@ -921,21 +921,21 @@
   border: none; }
 
 .social__link--vkontakte::after {
-  background-image: url(../../app/img/vk-icon-big.png);
+  background-image: url(../../build/img/vk-icon-big.png);
   width: 23px;
   height: 26px;
   left: calc(50% - 11.5px);
   top: calc(50% - 13px); }
 
 .social__link--facebook::after {
-  background-image: url(../../app/img/facebook-icon-big.png);
+  background-image: url(../../build/img/facebook-icon-big.png);
   width: 18px;
   height: 39px;
   left: calc(50% - 9px);
   top: calc(50% - 20px); }
 
 .social__link--instagram::after {
-  background-image: url(../../app/img/insta-icon-big.png);
+  background-image: url(../../build/img/insta-icon-big.png);
   width: 36px;
   height: 36px;
   left: calc(50% - 18px);
@@ -966,7 +966,7 @@
   .social__link--vkontakte::after {
     width: 15px;
     height: 17px;
-    background-image: url(../../app/img/vl-icon-small.png);
+    background-image: url(../../build/img/vl-icon-small.png);
     margin-left: 0;
     margin-top: 0;
     left: calc(50% - 7.5px);
@@ -974,7 +974,7 @@
   .social__link--facebook::after {
     width: 10px;
     height: 21px;
-    background-image: url(../../app/img/facebook-icon-small.png);
+    background-image: url(../../build/img/facebook-icon-small.png);
     left: calc(50% - 5px);
     top: calc(50% - 11.5px);
     margin-left: 0;
@@ -982,7 +982,7 @@
   .social__link--instagram::after {
     width: 19px;
     height: 19px;
-    background-image: url(../../app/img/insta-icon-small.png);
+    background-image: url(../../build/img/insta-icon-small.png);
     left: calc(50% - 9.5px);
     top: calc(50% - 9.5px);
     margin-left: 0;
@@ -1061,13 +1061,13 @@
     position: absolute;
     content: ""; }
   .client-aria__login-wrap::before {
-    background-image: url(../../app/img/Usercopy2.svg);
+    background-image: url(../../build/img/Usercopy2.svg);
     width: 14px;
     height: 15px;
     right: 19px;
     top: 17px; }
   .client-aria__password-wrap::before {
-    background-image: url(../../app/img/Locked2.svg);
+    background-image: url(../../build/img/Locked2.svg);
     width: 15px;
     height: 17px;
     right: 19px;
@@ -1164,7 +1164,7 @@
     content: "";
     position: absolute; }
   .type-of-service__trimming::before {
-    background-image: url(../../app/img/scissors-icon.svg);
+    background-image: url(../../build/img/scissors-icon.svg);
     width: 21px;
     height: 20px;
     left: -36px;
@@ -1172,7 +1172,7 @@
     background-position: 0 0;
     background-repeat: no-repeat; }
   .type-of-service__shaving::before {
-    background-image: url(../../app/img/beard-icon.svg);
+    background-image: url(../../build/img/beard-icon.svg);
     width: 23px;
     height: 21px;
     left: -36px;
@@ -1182,7 +1182,7 @@
   .type-of-service__moustache {
     margin-left: 60px; }
   .type-of-service__moustache::before {
-    background-image: url(../../app/img/mustache-icon.svg);
+    background-image: url(../../build/img/mustache-icon.svg);
     width: 45px;
     height: 12px;
     left: -55px;
@@ -1610,35 +1610,35 @@
   background-repeat: no-repeat; }
 
 .beard-choose__label--admiral::after {
-  background-image: url(../../app/img/beard-admiral.svg);
+  background-image: url(../../build/img/beard-admiral.svg);
   width: 52px;
   height: 49px;
   bottom: -60px;
   left: 2px; }
 
 .beard-choose__label--lumberman::after {
-  background-image: url(../../app/img/beard-lumberman.svg);
+  background-image: url(../../build/img/beard-lumberman.svg);
   width: 58px;
   height: 68px;
   bottom: -78px;
   left: -4px; }
 
 .beard-choose__label--iceman::after {
-  background-image: url(../../app/img/beard-iceman.svg);
+  background-image: url(../../build/img/beard-iceman.svg);
   width: 63px;
   height: 68px;
   bottom: -78px;
   left: 5px; }
 
 .beard-choose__label--boyar::after {
-  background-image: url(../../app/img/beard-boyar.svg);
+  background-image: url(../../build/img/beard-boyar.svg);
   width: 57px;
   height: 97px;
   bottom: -106px;
   left: -3px; }
 
 .beard-choose__label--sage::after {
-  background-image: url(../../app/img/beard-sage.svg);
+  background-image: url(../../build/img/beard-sage.svg);
   width: 45px;
   height: 104px;
   bottom: -114px;
@@ -2203,7 +2203,7 @@ picture {
   background-color: #f8f5f2; }
   .booking-main::after {
     content: "";
-    background-image: url(../../app/img/trianglef8f5f2.svg);
+    background-image: url(../../build/img/trianglef8f5f2.svg);
     position: absolute;
     bottom: -35px;
     width: 100%;
@@ -2232,7 +2232,7 @@ picture {
 @media (min-width: 1200px) {
   .photo-header__logo {
     height: 310px;
-    background-image: url(../../app/img/back-desktop.jpg); } }
+    background-image: url(../../build/img/back-desktop.jpg); } }
 
 .main-photo {
   z-index: 2;
