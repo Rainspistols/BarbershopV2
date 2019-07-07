@@ -91,43 +91,44 @@ picture {
     }
   }
 }
+
 .booking-header {
   background-color: #f8f5f2;
 }
 
 
-  @media (min-width:$tablet-width) {
-    .photo-header {
-      &__logo {
-        clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
-        background-color: #f8f5f2;
-        height: 210px;
-        background-position: center -110px;
-        background-size: auto;
-      }
-    }
-
-    .photo-body {
+@media (min-width:$tablet-width) {
+  .photo-header {
+    &__logo {
+      clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
       background-color: #f8f5f2;
-    }
-
-    .booking-form-body {
-      background-color: #f8f5f2;
-    }
-  }
-
-  @media (min-width:$desktop-width) {
-    .photo-header {
-      &__logo {
-        height: 310px;
-        background-image: url(../../build/img/back-desktop.jpg);
-
-      }
+      height: 210px;
+      background-position: center -110px;
+      background-size: auto;
     }
   }
 
-
-  .main-photo {
-    z-index: 2;
-    position: relative;
+  .photo-body {
+    background-color: #f8f5f2;
   }
+
+  .booking-form-body {
+    background-color: #f8f5f2;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .photo-header {
+    &__logo {
+      height: 310px;
+      background-image: url(../../build/img/back-desktop.jpg);
+
+    }
+  }
+}
+
+
+.main-photo {
+  z-index: 2;
+  position: relative;
+}
