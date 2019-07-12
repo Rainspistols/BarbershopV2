@@ -12,5 +12,5 @@ navToggle.addEventListener("click", function() {
   } else {
     navMain.classList.add ("main-nav--closed");
     navMain.classList.remove("main-nav--open");
-  }
-})
+  };
+});
