@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>barbershop-booking</title>
-  <link rel="stylesheet" href="../../build/css/style.css">
+  <link rel="stylesheet" href="../css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
 </head>
@@ -58,7 +58,7 @@
   <article class="booking-form">
     <div class="booking-form__title-wrap">
       <h1 class="booking-form__title">Запись на стрижку</h1>
-      <a href="index.html" class="booking-form__button-main button">На главную</a>
+      <a href="../index.html" class="booking-form__button-main button">На главную</a>
     </div>
     <form class="booking-form__list" method="POST" action="https://echo.htmlacademy.ru/">
       <div class="booking-form__names-wrap">
@@ -191,7 +191,33 @@
   </div>
 </footer>
 
-<script src="../js/_main-nav.js"></script>
+<section class="client-aria">
+  <h2 class="client-aria__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+  <p class="client-aria__instruction">Введите свой логин и пароль, чтобы войти</p>
+  <form action="https://echo.htmlacademy.ru" class="client-aria__form" method="post">
+    <div class="client-aria__login-wrap">
+      <input type="text" class="client-aria__login" placeholder="Логин" name="login" required>
+    </div>
+    <div class="client-aria__password-wrap">
+      <input type="password" class="client-aria__password" placeholder="Пароль" name="password" required>
+    </div>
+    <label class="client-aria__remember-me">Запомните меня
+      <input type="checkbox" checked="checked" name="remember-me" class="client-aria__default-checkbox">
+      <span class="client-aria__checkmark"></span>
+    </label>
+    <a href="" class="client-aria__forgot-password">Я забыл пароль!</a>
+    <div class="client-aria__buttons-wrap">
+      <button type="submit" class="client-aria__button-enter button button--fat">Войти</button>
+      <button type="submit" class="client-aria__button-enter2 button button--fat">Войти в личный кабинет</button>
+      <button type="button" class="client-aria__button-close button button--fat">ЗАКРЫТЬ</button>
+    </div>
+  </form>
+</section>
+
+<script src="../js/_main-nav.js" async></script>
+<script src="../js/advantages-slider.js" async></script>
+<script src="../js/reviews__slider.js" async></script>
+<script src="../js/client-aria.js" async></script>
 </body>
 
 </html>

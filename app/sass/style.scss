@@ -59,8 +59,12 @@ picture {
   overflow: hidden;
 }
 
+.js-show-block {
+  display: block;
+}
+
 .js-show {
-  display: block
+  display: flex;
 }
 
 .js-none {
@@ -72,16 +76,6 @@ picture {
   position: relative;
   z-index: 2;
   background-color: #f8f5f2;
-
-  &::after {
-    content: "";
-    background-image: url(../../build/img/trianglef8f5f2.svg);
-    position: absolute;
-    bottom: -35px;
-    width: 100%;
-    height: 35px;
-    left: 0;
-  }
 }
 
 @media (min-width:$tablet-width) {
@@ -121,8 +115,7 @@ picture {
   .photo-header {
     &__logo {
       height: 310px;
-      background-image: url(../../build/img/back-desktop.jpg);
-
+      background-image: url(../img/back-desktop.jpg);
     }
   }
 }

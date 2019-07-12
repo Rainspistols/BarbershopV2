@@ -24,7 +24,7 @@
   }
 
   &__trimming::before {
-    background-image: url(../../build/img/scissors-icon.svg);
+    background-image: url(../img/scissors-icon.svg);
     width: 21px;
     height: 20px;
     left: -36px;
@@ -33,7 +33,7 @@
     background-repeat: no-repeat;
   }
   &__shaving::before {
-    background-image: url(../../build/img/beard-icon.svg);
+    background-image: url(../img/beard-icon.svg);
     width: 23px;
     height: 21px;
     left: -36px;
@@ -45,7 +45,7 @@
     margin-left: 60px;
   }
   &__moustache::before {
-    background-image: url(../../build/img/mustache-icon.svg);
+    background-image: url(../img/mustache-icon.svg);
     width: 45px;
     height: 12px;
     left: -55px;

@@ -7,13 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Барбершоп "Бородинский v2"</title>
-  <link rel="stylesheet" href="../build/css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
 </head>
 
 <body>
-
   <header class="page-header page-header--index">
     <a href="index.html" class="logo">
       <picture>
@@ -94,7 +93,7 @@
     <section class="advantages page-main__advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages__list slider__list">
-        <li class="advantages__item advantages__item--quick slider__item">
+        <li class="advantages__item advantages__item--quick slider__item js-show">
           <img src="img/advantage-1-illustration.svg" width=95 height="95" class="advantages__img">
           <div class="advantages__tech-wrap">
             <h3 class="advantages__title">БЫСТРО</h3>
@@ -171,13 +170,13 @@
         <h2 class="reviews__title">Отзывы о нас</h2>
         <button type="button" class="reviews__write-button button">Оставить свой</button>
         <div class="reviews__list slider__list">
-          <button type="button" class="button reviews__button-left">&#9204</button>
-          <blockquote class="reviews__item reviews__item1">
+          <button type="button" class="button reviews__button-left"></button>
+          <blockquote class="reviews__item reviews__item1 js-show">
             <p class="reviews__author-picture">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/travis-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/travis-tablet.png">
-                <img src="img/travis.png" alt="фото Трэвиса Баркера" class="reviews__author-image" width="50"
+                <img src="img/depositphotos_16413067-stock-photo-travis-barker.jpg" alt="фото Трэвиса Баркера" class="reviews__author-image" width="50"
                   height="48">
               </picture>
             </p>
@@ -192,7 +191,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/travis-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/travis-tablet.png">
-                <img src="img/travis.png" alt="фото Трэвиса Баркера" class="reviews__author-image" width="50"
+                <img src="img/depositphotos_15087337-stock-photo-jason-statham.jpg" alt="фото Трэвиса Баркера" class="reviews__author-image" width="50"
                   height="48">
               </picture>
             </p>
@@ -206,7 +205,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/travis-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/travis-tablet.png">
-                <img src="img/travis.png" alt="фото Трэвиса Баркера" class="reviews__author-image" width="50"
+                <img src="img/depositphotos_16398251-stock-photo-brad-pitt.jpg" alt="фото Трэвиса Баркера" class="reviews__author-image" width="50"
                   height="48">
               </picture>
             </p>
@@ -215,12 +214,12 @@
               <p class="reviews__text">В Бородинском ваша борода в надежных руках!</p>
             </div>
           </blockquote>
-          <button type="button" class="button reviews__button-left">&#9205</button>
+          <button type="button" class="button reviews__button-right"></button>
         </div>
         <p class="reviews__toggles slider__toggles slider">
-          <button class="slider__toggle slider--black__toggle--current" type="button" aria-label="1"></button>
-          <button class="slider__toggle" type="button" aria-label="2"></button>
-          <button class="slider__toggle" type="button" aria-label="3"></button>
+          <button class="slider__toggle reviews__toggle1 slider--black__toggle--current" type="button" aria-label="1"></button>
+          <button class="slider__toggle reviews__toggle2" type="button" aria-label="2"></button>
+          <button class="slider__toggle reviews__toggle3" type="button" aria-label="3"></button>
         </p>
       </div>
     </section>
@@ -262,12 +261,12 @@
   <section class="client-aria">
     <h2 class="client-aria__title">ЛИЧНЫЙ КАБИНЕТ</h2>
     <p class="client-aria__instruction">Введите свой логин и пароль, чтобы войти</p>
-    <form action="" class="client-aria__form">
+    <form action="https://echo.htmlacademy.ru" class="client-aria__form" method="post">
       <div class="client-aria__login-wrap">
-        <input type="text" class="client-aria__login" placeholder="Логин">
+        <input type="text" class="client-aria__login" placeholder="Логин" name="login">
       </div>
       <div class="client-aria__password-wrap">
-        <input type="password" class="client-aria__password" placeholder="Пароль">
+        <input type="password" class="client-aria__password" placeholder="Пароль" name="password">
       </div>
       <label class="client-aria__remember-me">Запомните меня
         <input type="checkbox" checked="checked" name="remember-me" class="client-aria__default-checkbox">
@@ -281,8 +280,10 @@
     </form>
   </section>
 
-  <script src="js/_main-nav.js"></script>
-  <script src="js/advantages-slider.js"></script>
+  <script src="js/_main-nav.js" async></script>
+  <script src="js/advantages-slider.js" async></script>
+  <script src="js/reviews__slider.js" async></script>
+  <script src="js/client-aria.js" async></script>
 </body>
 
 </html>

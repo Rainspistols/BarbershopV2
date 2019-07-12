@@ -37,10 +37,6 @@
     justify-content: space-between;
   }
 
-  &__item:nth-child(2) {
-    display: flex;
-  }
-
   &__author-picture {
     margin: 0;
     height: 50px;
@@ -50,6 +46,7 @@
     min-width: 210px;
     padding-left: 20px;
     margin-top: -10px;
+    margin-right: auto;
   }
 
   &__author-name {
@@ -82,6 +79,11 @@
   &__author-image {
     border: 1px solid #eae3dc;
     max-width: none;
+    display: block;
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
   }
 
   &__button-left,
@@ -94,9 +96,11 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding: 37px 65px 71px;
+
     &::after {
       display: none;
     }
+
     &__wrap {
       display: flex;
       justify-content: space-between;
@@ -153,13 +157,46 @@
       display: inline-block;
       width: 50px;
       height: 100%;
+      position: relative;
     }
+
     &__toggles {
       bottom: 65px;
       width: 130px;
       height: auto;
       background-color: #f8f5f2;
       text-align: center;
+    }
+
+    &__button-left::after,
+    &__button-right::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      top: calc(50% - 5px);
+    }
+
+    &__button-right::after {
+      border: 8px solid transparent;
+      border-right: 8px solid black;
+      left: 8px;
+    }
+
+    &__button-left::after {
+      border: 8px solid transparent;
+      border-left: 8px solid black;
+      right: 8px;
+    }
+
+    &__button-left:hover.reviews__button-left::after,
+    &__button-right:hover.reviews__button-right::after {
+      opacity: 0.7;
+    }
+
+    &__button-left:active.reviews__button-left::after,
+    &__button-right:active.reviews__button-right::after {
+      opacity: 0.3;
     }
   }
 }
@@ -168,15 +205,19 @@
 @media (min-width: $desktop-width) {
   .reviews {
     padding-bottom: 98px;
+
     &__wrap {
       width: 960px;
     }
+
     &__title {
-        padding-left: 75px;
+      padding-left: 75px;
     }
+
     &__list {
       width: 100%;
     }
+
     &__item {
       width: 100%;
       margin-left: 20px;
@@ -186,21 +227,40 @@
       overflow: hidden;
       border: none;
     }
+
     &__text-wrap {
       padding: 30px 70px;
       border: 1px solid #e5ddd5;
       box-sizing: border-box;
       height: 100%;
       margin-top: 0;
+      margin-right: 0;
+      width: 100%;
     }
+
     &__toggles {
       bottom: 46px;
       width: auto;
     }
-    &__author-image{
-      width: 249px;
-      height: 169px;
+
+    &__author-image {
+      max-width: 249px;
+      max-height: 169px;
       border-radius: 0;
+      width: auto;
+      height: auto;
+    }
+
+    &__button-right::after {
+      border: 10px solid transparent;
+      border-right: 10px solid black;
+      left: 5px;
+    }
+
+    &__button-left::after {
+      border: 10px solid transparent;
+      border-left: 10px solid black;
+      right: 5px;
     }
   }
 }

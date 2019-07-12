@@ -59,7 +59,7 @@
   }
 
   &__link--vkontakte::after {
-    background-image: url(../../build/img/vk-icon-big.png);
+    background-image: url(../img/vk-icon-big.png);
     width: 23px;
     height: 26px;
     left: calc(50% - 11.5px);
@@ -67,7 +67,7 @@
   }
 
   &__link--facebook::after {
-    background-image: url(../../build/img/facebook-icon-big.png);
+    background-image: url(../img/facebook-icon-big.png);
     width: 18px;
     height: 39px;
     left: calc(50% - 9px);
@@ -75,7 +75,7 @@
   }
 
   &__link--instagram::after {
-    background-image: url(../../build/img/insta-icon-big.png);
+    background-image: url(../img/insta-icon-big.png);
     width: 36px;
     height: 36px;
     left: calc(50% - 18px);
@@ -117,7 +117,7 @@
     &__link--vkontakte::after {
       width: 15px;
       height: 17px;
-      background-image: url(../../build/img/vl-icon-small.png);
+      background-image: url(../img/vl-icon-small.png);
       margin-left: 0;
       margin-top: 0;
       left: calc(50% - 7.5px);
@@ -127,7 +127,7 @@
     &__link--facebook::after {
       width: 10px;
       height: 21px;
-      background-image: url(../../build/img/facebook-icon-small.png);
+      background-image: url(../img/facebook-icon-small.png);
       left: calc(50% - 5px);
       top: calc(50% - 11.5px);
       margin-left: 0;
@@ -137,7 +137,7 @@
     &__link--instagram::after {
       width: 19px;
       height: 19px;
-      background-image: url(../../build/img/insta-icon-small.png);
+      background-image: url(../img/insta-icon-small.png);
       left: calc(50% - 9.5px);
       top: calc(50% - 9.5px);
       margin-left: 0;

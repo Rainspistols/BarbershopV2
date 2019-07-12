@@ -10,7 +10,15 @@
   display: none;
   background-color: #f8f5f2;
   padding: 30px 20px 27px 20px;
-  box-shadow: 0px 30px 50px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 136px;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  box-sizing: border-box;
+  max-width: 460px;
+  min-width: 320px;
 
   &__title {
     font-family: 'PT Sans Narrow', sans-serif, arial;
@@ -39,6 +47,7 @@
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #e5ddd5;
+    padding-right: 50px;
   }
 
   &__login:active,
@@ -71,7 +80,7 @@
   }
 
   &__login-wrap::before {
-    background-image: url(../../build/img/Usercopy2.svg);
+    background-image: url(../img/Usercopy2.svg);
     width: 14px;
     height: 15px;
     right: 19px;
@@ -79,7 +88,7 @@
   }
 
   &__password-wrap::before {
-    background-image: url(../../build/img/Locked2.svg);
+    background-image: url(../img/Locked2.svg);
     width: 15px;
     height: 17px;
     right: 19px;
@@ -128,13 +137,13 @@
 
   }
 
-  &__remember-me &__default-checkbox:checked ~ &__checkmark::after {
+  &__remember-me &__default-checkbox:checked~&__checkmark::after {
     display: block;
   }
 
   &__forgot-password {
     @include font-18-30-regular;
-    float:right;
+    float: right;
   }
 
   &__buttons-wrap {
@@ -142,9 +151,82 @@
     justify-content: space-between;
   }
 
-  &__button-enter {
+  &__button-enter,
+  &__button-enter2 {
     margin-right: 20px;
     background-color: #826550;
     color: #ffffff;
+  }
+  &__button-enter2 {
+    display: none;
+  }
+}
+
+@media (min-width: 461px) {
+  .client-aria {
+    left: calc(50% - 230px);
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .client-aria {
+    top: 120px;
+    padding: 50px 70px 60px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 30px;
+    }
+
+    &__login,
+    &__password {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &__login-wrap::before {
+      right: 26px;
+      top: 25px;
+    }
+
+    &__password-wrap::before {
+      right: 26px;
+      top: 22px;
+    }
+
+    &__button-enter {
+      display: none;
+    }
+
+    &__button-enter2 {
+      margin-right: 0;
+      display: block;
+    }
+
+    &__button-close {
+      position: absolute;
+      top: 30px;
+      left: 500px;
+      width: 28px;
+      height: 28px;
+      font-size: 0;
+      background-image: url("../img/closeBtn.svg");
+      border: none;
+    }
+    &__button-close:hover {
+      opacity: 0.7;
+      font-size: 0;
+      border: none;
+      background-color: transparent;
+    }
+    &__button-close:active {
+      opacity: 0.3;
+      font-size: 0;
+      border: none;
+      background-color: transparent;
+    }
   }
 }

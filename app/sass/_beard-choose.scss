@@ -48,6 +48,7 @@
 
   &__label {
     position: relative;
+    cursor: pointer;
   }
 
   &__label::after {
@@ -58,7 +59,7 @@
   }
 
   &__label--admiral::after {
-    background-image: url(../../build/img/beard-admiral.svg);
+    background-image: url(../img/beard-admiral.svg);
     width: 52px;
     height: 49px;
     bottom: -60px;
@@ -66,7 +67,7 @@
   }
 
   &__label--lumberman::after {
-    background-image: url(../../build/img/beard-lumberman.svg);
+    background-image: url(../img/beard-lumberman.svg);
     width: 58px;
     height: 68px;
     bottom: -78px;
@@ -74,7 +75,7 @@
   }
 
   &__label--iceman::after {
-    background-image: url(../../build/img/beard-iceman.svg);
+    background-image: url(../img/beard-iceman.svg);
     width: 63px;
     height: 68px;
     bottom: -78px;
@@ -82,7 +83,7 @@
   }
 
   &__label--boyar::after {
-    background-image: url(../../build/img/beard-boyar.svg);
+    background-image: url(../img/beard-boyar.svg);
     width: 57px;
     height: 97px;
     bottom: -106px;
@@ -90,7 +91,7 @@
   }
 
   &__label--sage::after {
-    background-image: url(../../build/img/beard-sage.svg);
+    background-image: url(../img/beard-sage.svg);
     width: 45px;
     height: 104px;
     bottom: -114px;

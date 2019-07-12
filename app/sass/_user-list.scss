@@ -19,9 +19,13 @@
     line-height: 24px;
     padding-left: 49px;
     padding-right: 17px;
-    width: 100%;
     text-align: left;
     cursor: pointer;
+    width: 100%;
+  }
+  &__item {
+    width: 100%;
+    position: relative;
   }
 
   &__user-icon {
