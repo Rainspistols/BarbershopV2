@@ -1,14 +1,15 @@
 .advantages {
   position: relative;
+  margin-top: -1px;
 
   &::after {
     content: "";
     background-color: #242424;
     width: 100%;
-    height: 35px;
+    height: 36px;
     bottom: -35px;
     position: absolute;
-    clip-path: polygon(50% 97%, 0 0, 100% 0);
+    clip-path: polygon(0 5%, 0 0, 100% 0, 100% 5%, 50% 100%);
   }
 
   &__list {
@@ -28,6 +29,7 @@
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
+
     &--cool,
     &--expensive,
     &--quick {
@@ -77,9 +79,10 @@
 
     &::after {
       width: 100%;
-      height: 42px;
+      height: 43px;
       bottom: -42px;
-      background-color: inherit;
+      background-color: #353535;
+      clip-path: polygon(0 5%, 0 0, 100% 0, 100% 5%, 50% 100%);
     }
 
     &__item--cool,
@@ -132,6 +135,7 @@
         margin: 0;
         margin-bottom: 35px
       }
+
       &--cool,
       &--expensive,
       &--quick {
@@ -152,11 +156,13 @@
 @media (min-width: $desktop-width) {
   .advantages {
     width: 100%;
+
     &::after {
-      bottom: -65px;
-      height: 66px;
-      margin: 0;
+      bottom: -66px;
+      height: 67px;
+      clip-path: polygon(0 5%, 0 0, 100% 0, 100% 5%, 50% 100%);
     }
+
     &__list {
       box-sizing: border-box;
       flex-wrap: wrap;
@@ -167,26 +173,32 @@
       margin: auto;
       display: flex;
     }
+
     &__item {
       border: none;
       width: 317px;
       flex-wrap: wrap;
       margin-bottom: 40px;
       flex-flow: row wrap;
+
       .advantages__img {
         margin: auto;
       }
+
       .advantages__tech-wrap,
       .advantages__title,
       .advantages__description {
-        text-align: center;;
+        text-align: center;
+        ;
       }
+
       .advantages__description {
         width: 80%;
         margin: auto;
       }
+
       .advantages__tech-wrap {
-      padding-top: 35px;
+        padding-top: 35px;
       }
 
     }

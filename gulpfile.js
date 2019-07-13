@@ -21,7 +21,6 @@ gulp.task('styles', function () {
     .pipe(gulp.dest("app/css"));
 });
 
-
 gulp.task('img', function () {
   return gulp.src("app/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([

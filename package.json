@@ -1,14 +1,12 @@
 {
-  "name": "barbershopv2",
+  "name": "Rainspistols",
   "version": "1.0.0",
-  "description": "first-project",
+  "description": "projects",
   "main": "index.js",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'app/sass/**/*.scss' --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "npm run build"
+    "test": "npm run editorconfig && npm run stylelint"
   },
   "repository": {
     "type": "git",

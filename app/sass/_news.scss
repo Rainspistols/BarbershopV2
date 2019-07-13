@@ -48,8 +48,9 @@
     display: flex;
     justify-content: space-between;
   }
-  &__item--mobile:nth-child(n+3) {
+  &__item--mobile3 {
     display: none;
+    border-top: 1px solid #e5ddd5;
   }
 
   &__item--mobile:first-child {
@@ -126,7 +127,7 @@
     }
     &__item--mobile {
       width: 50%;
-      padding-right: 30px;
+      padding-right: 20px;
       box-sizing: border-box;
       border: none;
     }
@@ -134,7 +135,7 @@
       border: none;
     }
     &__title {
-      width: 50%;
+      width: 100%;
       text-align: left;
       font-size: 40px;
       margin-top: 10px;
@@ -150,6 +151,7 @@
       line-height: 27px;
       font-size: 18px;
       font-weight: 500;
+      box-sizing: border-box;
     }
     &__button {
       display: none;
