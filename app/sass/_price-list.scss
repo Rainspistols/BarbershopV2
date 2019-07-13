@@ -6,13 +6,13 @@
 
   &::after {
     content: "";
-    background-color: inherit;
+    background-color: #353535;
     width: 100%;
-    height: 35px;
+    height: 36px;
     bottom: -35px;
     left: 0;
     position: absolute;
-    clip-path: polygon(50% 97%, 0 0, 100% 0);
+    clip-path: polygon(0 5%, 0 0, 100% 0, 100% 5%, 50% 100%);
   }
 
   &__table-tablet {
@@ -26,7 +26,11 @@
     padding-top: 80px;
     padding-left: 0;
     padding-right: 0;
-
+    &::after {
+      bottom: -40px;
+      height: 41px;
+      clip-path: polygon(0 5%, 0 0, 100% 0, 100% 5%, 50% 100%);
+    }
     &__wrap {
       width: 84%;
       max-width: 980px;
