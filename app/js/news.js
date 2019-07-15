@@ -1,4 +1,4 @@
-var showBtn = document.querySelector(".news__button"),
+let showBtn = document.querySelector(".news__button"),
   newsBlock = document.querySelector(".news__item--mobile3");
 
 showBtn.addEventListener("click", function() {

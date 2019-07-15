@@ -1,6 +1,6 @@
 "use strict"
 
-var clientAria = document.querySelector(".client-aria"),
+let clientAria = document.querySelector(".client-aria"),
   mainNav = document.querySelector(".main-nav"),
   mainNavOpen = document.querySelector(".main-nav--open"),
   mainNavClosed = document.querySelector(".main-nav--closed"),

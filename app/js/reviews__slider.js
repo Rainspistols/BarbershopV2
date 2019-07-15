@@ -1,9 +1,9 @@
 "use strict"
 
-var slideBtn1 = document.querySelector(".reviews__toggle1"),
+let slideBtn1 = document.querySelector(".reviews__toggle1"),
   slideBtn2 = document.querySelector(".reviews__toggle2"),
   slideBtn3 = document.querySelector(".reviews__toggle3");
-var slide1 = document.querySelector(".reviews__item1"),
+let slide1 = document.querySelector(".reviews__item1"),
   slide2 = document.querySelector(".reviews__item2"),
   slide3 = document.querySelector(".reviews__item3");
 

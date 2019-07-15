@@ -1,9 +1,9 @@
 "use strict"
 
-var quickBtn = document.querySelector(".slider__toggle1"),
+let quickBtn = document.querySelector(".slider__toggle1"),
   coolBtn = document.querySelector(".slider__toggle2"),
   expensiveBtn = document.querySelector(".slider__toggle3");
-var quickSlide = document.querySelector(".advantages__item--quick"),
+let quickSlide = document.querySelector(".advantages__item--quick"),
   coolSlide = document.querySelector(".advantages__item--cool"),
   expensiveSlide = document.querySelector(".advantages__item--expensive");
 
