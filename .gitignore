@@ -1,0 +1,8 @@
+# Packages
+node_modules/
+
+# IDE - PyCharm
+.idea/
+
+# IDE - VSCode
+.vscode/*
