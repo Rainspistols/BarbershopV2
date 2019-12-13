@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Barbershop photos</title>
-    <link rel="stylesheet" href="../css/style.min.css" />
+    <meta name="description" content="Barbershop photo-page" />
+    <meta name="theme-color" content="#000000" />
     <link
       href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic"
-      rel="stylesheet"
+      rel="preload"
+      as="font"
     />
+    <link rel="stylesheet" href="../css/style.min.css" />
   </head>
 
   <body class="photo-body">
@@ -357,6 +360,7 @@
                 href="https://vk.com"
                 class="social__link social__link--vkontakte"
                 aria-label="Мы в Вконтакте"
+                target="_blank"
               ></a>
             </li>
             <li class="social__item">
@@ -364,6 +368,7 @@
                 href="https://facebook.com"
                 class="social__link social__link--facebook"
                 aria-label="Мы в Фейсбуке"
+                target="_blank"
               ></a>
             </li>
             <li class="social__item">
@@ -371,6 +376,7 @@
                 href="https://instagram.com"
                 class="social__link social__link--instagram"
                 aria-label="Мы в Инстаграме"
+                target="_blank"
               ></a>
             </li>
           </ul>
@@ -378,10 +384,10 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a
-            href="https://github.com/Rainspistols"
+            href="https://rainspistols.github.io/Byteserker/"
             target="_blank"
             class="copyright__link button button--black"
-            >Rainspistols</a
+            >Byteserker</a
           >
         </div>
       </div>
@@ -441,9 +447,6 @@
       </form>
     </section>
 
-    <script src="../js/main-nav.js" async></script>
-    <script src="../js/advantages-slider.js" async></script>
-    <script src="../js/reviews__slider.js" async></script>
-    <script src="../js/client-aria.js" async></script>
+    <script src="../main.bundle.js" async></script>
   </body>
 </html>
