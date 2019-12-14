@@ -167,6 +167,7 @@
     background-color: transparent;
     border: 1px solid #e5ddd5;
     position: relative;
+    cursor: pointer;
     &::after {
       position: absolute;
       content: '';
