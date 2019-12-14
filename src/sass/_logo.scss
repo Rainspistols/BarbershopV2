@@ -25,6 +25,12 @@
       margin-top: 39px;
     }
   }
+  .logo {
+    background-image: url('./img/back-tablet.webp');
+  }
+  .no-webp .logo {
+    background-image: url('./img/back-tablet.jpg');
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -36,5 +42,11 @@
     &__image {
       margin-top: 57px;
     }
+  }
+  .logo {
+    background-image: url('./img/back-desktop.webp');
+  }
+  .no-webp .logo {
+    background-image: url('./img/back-desktop.jpg');
   }
 }
