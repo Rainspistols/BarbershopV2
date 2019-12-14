@@ -16,7 +16,6 @@
   .logo {
     height: 400px;
     padding: 0;
-    background-image: url(./img/back-tablet.jpg);
     background-position: center 0px;
     background-size: cover;
     pointer-events: none;
@@ -35,7 +34,6 @@
 
 @media (min-width: $desktop-width) {
   .logo {
-    background-image: url(./img/back-desktop.jpg);
     height: 650px;
     background-position: center -0px;
     background-size: cover;

@@ -1,33 +1,33 @@
-$tablet-width:768px;
-$desktop-width:1200px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
 $mobile-width-only: 767px;
 
-@import "libs";
-@import "logo";
-@import "main-nav";
-@import "stats";
-@import "advantages";
-@import "news";
-@import "button";
-@import "reviews";
-@import "contacts";
-@import "social";
-@import "copyright";
-@import "client-aria";
-@import "sticker";
-@import "type-of-service";
-@import "our-portfolio";
-@import "price-list";
-@import "discount-time";
-@import "booking-form";
-@import "beard-choose";
-@import "additional-service";
-@import "page-footer";
-@import "table-tablet";
-@import "table-mobile";
-@import "site-list";
-@import "user-list";
-@import "page-header";
+@import 'libs';
+@import 'logo';
+@import 'main-nav';
+@import 'stats';
+@import 'advantages';
+@import 'news';
+@import 'button';
+@import 'reviews';
+@import 'contacts';
+@import 'social';
+@import 'copyright';
+@import 'client-aria';
+@import 'sticker';
+@import 'type-of-service';
+@import 'our-portfolio';
+@import 'price-list';
+@import 'discount-time';
+@import 'booking-form';
+@import 'beard-choose';
+@import 'additional-service';
+@import 'page-footer';
+@import 'table-tablet';
+@import 'table-mobile';
+@import 'site-list';
+@import 'user-list';
+@import 'page-header';
 
 body {
   margin: 0;
@@ -74,14 +74,13 @@ ul {
   display: none;
 }
 
-
 .booking-main {
   position: relative;
   z-index: 2;
   background-color: #f8f5f2;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .booking-main {
     &::after {
       display: none;
@@ -93,8 +92,7 @@ ul {
   background-color: #f8f5f2;
 }
 
-
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .photo-header {
     &__logo {
       clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
@@ -114,15 +112,19 @@ ul {
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .photo-header {
     &__logo {
       height: 310px;
-      background-image: url(../img/back-desktop.jpg);
     }
   }
+  .photo-header {
+    background-image: url('./img/back-desktop.webp');
+  }
+  .no-webp .photo-header {
+    background-image: url('./img/back-desktop.jpg');
+  }
 }
-
 
 .main-photo {
   z-index: 2;
