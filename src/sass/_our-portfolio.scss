@@ -32,6 +32,9 @@
   &__best-work {
     position: relative;
     margin-bottom: 20px;
+    width: 280px;
+    box-sizing: border-box;
+    margin:0 auto 20px;
   }
 
   &__best-work:last-child {
@@ -107,12 +110,14 @@
     }
 
     &__button {
-      display: block;
       width: 25%;
       height: 50px;
       box-sizing: border-box;
       text-transform: uppercase;
       margin-bottom: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     &__wrap {
