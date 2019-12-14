@@ -30,7 +30,6 @@
     background-color: #6a4d38;
     border: none;
     cursor: pointer;
-    transition: all 2s ease-in;
     animation: left-to-right 0.3s ease forwards;
   }
 
@@ -187,6 +186,13 @@
     &__toggle {
       display: none;
     }
+  }
+  .main-nav__wrap {
+    a,
+    button {
+      transition: all 0.3s ease-out;
+    }
+
   }
 }
 

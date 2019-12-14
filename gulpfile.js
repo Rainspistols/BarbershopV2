@@ -123,8 +123,7 @@ function createCssLibs() {
   return src([
     "node_modules/normalize.css/normalize.css",
     "node_modules/slick-carousel/slick/slick.css",
-    "node_modules/animate.css/animate.css",
-    "node_modules/fullpage.js/dist/fullpage.css"
+    "node_modules/animate.css/animate.css"
   ])
     .pipe(concat("_libs.scss"))
     .pipe(dest("./src/sass/"))
@@ -134,7 +133,8 @@ function createCssLibs() {
 function getJslibs() {
   return src(["node_modules/slick-carousel/slick/slick.js"])
     .pipe(concat("libs.min.js"))
-    .pipe(dest("./src/js/"))
+    .pipe(dest("./docs/"))
+    .pipe(uglify())
     .pipe(browserSync.reload({ stream: true }));
 }
 

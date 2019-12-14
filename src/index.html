@@ -55,8 +55,11 @@
               <a href="#">Контакты</a>
             </li>
             <li class="site-list__item">
-              <a href="https://github.com/Rainspistols" target="_blank"
-                >RAINSPISTOLS</a
+                <a
+                href="https://rainspistols.github.io/Byteserker/"
+                target="_blank"
+                class="copyright__link button button--black"
+                >Byteserker</a
               >
             </li>
           </ul>
@@ -177,23 +180,6 @@
             </div>
           </li>
         </ul>
-        <p class="advantages__toggles slider__toggles">
-          <button
-            class="slider__toggle slider__toggle1 slider__toggle--current"
-            type="button"
-            aria-label="1"
-          ></button>
-          <button
-            class="slider__toggle slider__toggle2"
-            type="button"
-            aria-label="2"
-          ></button>
-          <button
-            class="slider__toggle slider__toggle3"
-            type="button"
-            aria-label="3"
-          ></button>
-        </p>
       </section>
 
       <section class="news page-main__news">
@@ -248,8 +234,7 @@
             Оставить свой
           </button>
           <div class="reviews__list slider__list">
-            <button type="button" class="button reviews__button-left"></button>
-            <blockquote class="reviews__item reviews__item1 js-show">
+            <blockquote class="reviews__item reviews__item1">
               <p class="reviews__author-picture">
                 <picture>
                   <source
@@ -319,25 +304,7 @@
                 </p>
               </div>
             </blockquote>
-            <button type="button" class="button reviews__button-right"></button>
           </div>
-          <p class="reviews__toggles slider__toggles slider">
-            <button
-              class="slider__toggle reviews__toggle1 slider--black__toggle--current"
-              type="button"
-              aria-label="1"
-            ></button>
-            <button
-              class="slider__toggle reviews__toggle2"
-              type="button"
-              aria-label="2"
-            ></button>
-            <button
-              class="slider__toggle reviews__toggle3"
-              type="button"
-              aria-label="3"
-            ></button>
-          </p>
         </div>
       </section>
     </main>
@@ -398,7 +365,7 @@
       </div>
     </footer>
 
-    <section class="client-aria">
+    <section class="client-aria animated bounceInDown">
       <h2 class="client-aria__title">ЛИЧНЫЙ КАБИНЕТ</h2>
       <p class="client-aria__instruction">
         Введите свой логин и пароль, чтобы войти
@@ -452,6 +419,8 @@
       </form>
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./libs.min.js"></script>
     <script src="./main.bundle.js"></script>
   </body>
 </html>

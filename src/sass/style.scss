@@ -2,11 +2,11 @@ $tablet-width:768px;
 $desktop-width:1200px;
 $mobile-width-only: 767px;
 
+@import "libs";
 @import "logo";
 @import "main-nav";
 @import "stats";
 @import "advantages";
-@import "slider";
 @import "news";
 @import "button";
 @import "reviews";
@@ -43,6 +43,9 @@ img {
 picture {
   margin-left: auto;
   margin-right: auto;
+}
+ul {
+  list-style: none;
 }
 
 .visually-hidden:not(:focus):not(:active) {

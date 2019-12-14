@@ -23,6 +23,7 @@
     padding: 20px 0;
     display: none;
     cursor: pointer;
+    transition: all 0.3s ease-out;
   }
 
   &__item:hover &__link,
@@ -37,6 +38,7 @@
   &__item:hover &__date,
   &__item:focus &__date {
     background-color: #826550;
+    transition: all 0.3s ease-out;
   }
 
   &__item:active &__date {
@@ -70,6 +72,7 @@
     line-height: 10px;
     color: #ffffff;
     text-align: center;
+    transition: all 0.3s ease-out;
   }
 
   &__day {

@@ -157,9 +157,6 @@
     background-color: #826550;
     color: #ffffff;
   }
-  &__button-enter2 {
-    display: none;
-  }
 }
 
 @media (min-width: 461px) {
@@ -195,10 +192,6 @@
     &__password-wrap::before {
       right: 26px;
       top: 22px;
-    }
-
-    &__button-enter {
-      display: none;
     }
 
     &__button-enter2 {
